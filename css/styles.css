@@ -169,7 +169,7 @@ h4 {
   padding-right: 35px;
   float: left;
   padding-top: 20px;
-  padding-bottom: 20px;
+ 
 }
 
 .skills-text {
@@ -202,7 +202,7 @@ h4 {
 
 
 #pie_chart{
-  padding: 20px 70px 0;
+  padding: 0 70px 0;
  vertical-align: middle;
 }
 
