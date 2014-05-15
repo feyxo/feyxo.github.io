@@ -19,15 +19,16 @@
 </head>
 
 <body>
-  
+  <header
   <nav id="topnav" class="clearfix">
     <ul>
-      <li><a href="body" id="homenavlink">HOME</a></li>
-      <li><a href="#resume" id="resumenavlink">RESUME</a></li>
-      <li><a href="#projects" id="projectsnavlink">PROJECTS</a></li>
-      <li><a href="#contact" id="contactnavlink">CONTACT</a></li>
+      <li><a href="body" id="homenavlink">Home</a></li>
+      <li><a href="#resume" id="resumenavlink">Resume</a></li> 
+      <li><a href="#projects" id="projectsnavlink">Projects</a></li>
+      <li><a href="#contact" id="contactnavlink">Contacts</a></li>
     </ul>
   </nav><!-- @end #topnav -->
+  </header>
   
 
   <section id="pagetop" class="contentpg" data-link-id ="homenavlink">
@@ -36,8 +37,26 @@
     <div class="about">
       <h2>FEYISOLA AGBAJE</h2>
       <h3>Front-End Developer/ User Interface Designer</h3>
-      <h4><i class ="fa fa-envelope fa-lg"></i>feyisola.agbaje@gmail.com</h4>
-      <h4><i class="fa fa-mobile fa-lg"></i>+1(519)-575-5056</h4>
+      <h3><i class ="fa fa-envelope fa-lg"></i>fagbaje@uwaterloo.ca</h3>
+      <h3><i class="fa fa-mobile fa-lg"></i>+1(519)-575-5056</h3>
+    </div>
+
+    <div class="bio">
+    <h3><i class="fa fa-quote-left"></i>
+    I am passionate about good, clean design - from impeccably designed applications, to a fantastic Burberry coat. I want to create aesthetically pleasing sites/applications, for the best possible user experience.
+    <i class="fa fa-quote-right"></i></h3>
+
+    <h3>In my free time, <strike> when I'm not too busy saving the world, </strike> I enjoy reading chick-lit (and some serious literature), exploring new places, music, concerts, and cooking. </h3>
+    </div>
+
+    <div class = "about_icons">
+
+    <h3>
+    <a href="http://www.facebook.com/feyisolaa" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+   <a href="http://www.linkedin.com/pub/feyisola-agbaje/40/273/491" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+   <a href="https://github.com/feyxo" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+   <a href="https://www.twitter.com/feyisolaa" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+    </h3>
     </div>
 
       
@@ -112,19 +131,19 @@
   <div id="education">
     <div id ="edu_info">
     <h3><i class="fa fa-certificate fa-lg"></i> </h3>
-    <h3>Education </h3>
-    <h4>BASc. Systems Design Engineering,</h4>
-    <h4>Management Sciences Option</h4>
+    <h3><em>Education</em> </h3>
+    <h4><strong>BASc. Systems Design Engineering,</strong></h4>
+    <h4><strong>Management Sciences Option</strong></h4>
     <h4>University of Waterloo</h4>
     <h4>September 2009- June 2014</h4>
     </div>
     <div id="pie_chart"></div>
-   
+
   </div>
 
   <div id="courses">
     <h3><i class="fa fa-book fa-lg"></i></h3>
-    <h3>Relevant Courses </h3>
+    <h3><em>Relevant Courses</em></h3>
     <ul>
       <li><h4>Interface Design</h4></li>
       <li><h4>Machine Intelligence</h4></li>
@@ -150,6 +169,7 @@
   
   <section id="projects" class="contentpg" data-link-id="projectsnavlink">
     <div class="section_title"><h2>Projects</h2></div>
+    <h3>Here are some projects that I have worked on:</h3>
     <div class ="slides_container">
       <div id="slides">
         <img src="img/farmeutopia/farm1.png">
@@ -215,7 +235,7 @@
       <div class ="project_description">
         <div class ="project_name"><h3>JadeMap <a href="http://jademap.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i></a></h3></div>
       <div class="project_text">
-        <h4>Designed the user interface for a map-based classifieds web application, using HTML, CSS, JavaScript, etc. The application detects the user's location and displays all classifieds in the vicinity. Collaborated with team to develop mobile app using PhoneGap.</h4>
+        <h4>Developed the user interface for a map-based classifieds web application, using HTML, CSS, JavaScript, etc. The application detects the user's location and displays all classifieds in the vicinity. Collaborated with team to develop mobile app using PhoneGap.</h4>
 
         
       </div>
@@ -233,7 +253,7 @@
    
 
   <div class ="section_title"><h2>Get in Touch</h2></div>
-
+    <h3>You can send me a message using the form below, or contact me on any social network. </h3>
    
    
 
@@ -256,7 +276,24 @@
    <button onclick="window.open('https://www.twitter.com/feyisolaa')"><i class="fa fa-twitter"></i>Twitter</button>
    </div>
 
+   <footer> 
+   <div class="footer_text">
+    © Feyisola Agbaje, 2014. All rights reserved.
+   </div>
+
+   <div class="footer_icons">
+   <a href="http://www.facebook.com/feyisolaa" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+   <a href="http://www.linkedin.com/pub/feyisola-agbaje/40/273/491" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+   <a href="https://github.com/feyxo" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+   <a href="https://www.twitter.com/feyisolaa" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+     
+   </div>
+
+   </footer>
+
   </section><!-- @end #contact -->
+
+
 <script type="text/javascript">
 $(function(){
   $('#topnav ul li a').on('click', function(e){
@@ -277,7 +314,7 @@ $(function(){
  
     data = [{"label":"Mathematics", "value":16.5}, 
             {"label":"Science", "value":11.7}, 
-            {"label":"Eng. Sience", "value":25.9},
+            {"label":"Eng. Science", "value":25.9},
             {"label":"Eng. Design", "value":28.8},
             {"label":"Electives", "value":17.1},];
     
