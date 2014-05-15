@@ -15,6 +15,7 @@
   <script src="js/jquery.slides.min.js"></script>
   <script type="text/javascript" src="js/animatescroll.js"></script>
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -29,19 +30,21 @@
   </nav><!-- @end #topnav -->
   
 
-  <section id="pagetop" class="contentpg">
+  <section id="pagetop" class="contentpg" data-link-id ="homenavlink">
     
     <div class="circular"></div>
     <div class="about">
       <h2>FEYISOLA AGBAJE</h2>
       <h3>Front-End Developer/ User Interface Designer</h3>
+      <h4><i class ="fa fa-envelope fa-lg"></i>feyisola.agbaje@gmail.com</h4>
+      <h4><i class="fa fa-mobile fa-lg"></i>+1(519)-575-5056</h4>
     </div>
 
       
   </section><!-- @end #pagetop -->
   
 
-  <section id="resume" class="contentpg">
+  <section id="resume" class="contentpg" data-link-id ="resumenavlink">
     <!--
     <h2>Resume</h2>
     <embed src="resume.pdf"> -->
@@ -142,8 +145,8 @@
   </section><!-- @end #about -->
   
   
-  <section id="projects" class="contentpg">
-    <h3>Projects</h3>
+  <section id="projects" class="contentpg" data-link-id="projectsnavlink">
+    <div class="section_title"><h2>Projects</h2></div>
     <div class ="slides_container">
       <div id="slides">
         <img src="img/farmeutopia/farm1.png">
@@ -153,7 +156,18 @@
         <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left"></i></a>
         <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right"></i></a>
       </div>
+    </div>
+    <div class ="project_description">
+        <div class ="project_name"><h3>farmEUTOPIA <a href="https://github.com/majdal/modex" target="_blank"><i class="fa fa-external-link"></i></a> <a href="https://vimeo.com/95046298" target="_blank"><i class="fa fa-video-camera"></i></a></h3></div>
+      <div class="project_text">
+        <h4>Worked in collaboration with Social Innovation Generation, and the Games Institute at the University of Waterloo to develop the user interface for farmEUTOPIA. farmEUTOPIA is a food system simulator (using real Southern Ontario data), which allows policy makers to test the results of food policy innovations (such as taxes and subsidies) before they are implemented.</h4>
 
+        <p>Final Year Design Project, September 2013-March 2014</p>
+      </div>
+      
+    </div>
+
+    <div class ="slides_container">
       <div id="slides2">
         <img src="img/id/new1.png">
         <img src="img/id/new2.png">
@@ -172,6 +186,17 @@
         <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-chevron-left"></i></a>
         <a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-chevron-right"></i></a>
       </div>
+    </div>
+    <div class ="project_description">
+        <div class ="project_name"><h3>Interface Design Project <a href="https://www.dropbox.com/sh/yqwur7hu808sh90/AADjJ35vE4Hp1wq2Paa9jt9Xa" target="_blank"><i class="fa fa-external-link"></i></a></h3></div>
+      <div class="project_text">
+        <h4>Designed the user interface for an in-car touchscreen GPS navigation system, using Adobe Photoshop CS6. The GPS system provides options for navigating to a new address, previous location, and point of interest.</h4>
+
+        <p>Interface Design Project, January-April 2014</p>
+      </div>
+    </div>
+
+     <div class ="slides_container">
       <div id="slides3">
         <img src="img/jademap/jade1.png">
         <img src="img/jademap/jade2.png">
@@ -183,45 +208,31 @@
       </div>
     </div>
 
-    <div class = "projects_container">
-      <div class ="project_description">
-        <div class ="project_name"><h3>farmEUTOPIA <a href="https://github.com/majdal/modex"><i class="fa fa-external-link"></i></a> <a href="https://vimeo.com/95046298"><i class="fa fa-video-camera"></i></a></h3></div>
-      <div class="project_text">
-        <h4>Worked in collaboration with Social Innovation Generation, and the Games Institute at the University of Waterloo to develop the user interface for farmEUTOPIA. farmEUTOPIA is a food system simulator (using real Southern Ontario data), which allows policy makers to test the results of food policy innovations (such as taxes and subsidies) before they are implemented.</h4>
-
-        <p>Final Year Design Project, September 2013-March 2014</p>
-      </div>
-      
-      </div>
 
       <div class ="project_description">
-        <div class ="project_name"><h3>Interface Design Project <a href="https://www.dropbox.com/sh/yqwur7hu808sh90/AADjJ35vE4Hp1wq2Paa9jt9Xa"><i class="fa fa-external-link"></i></a></h3></div>
-      <div class="project_text">
-        <h4>Designed the user interface for an in-car touchscreen GPS navigation system, using Adobe Photoshop CS6. The GPS system provides options for navigating to a new address, previous location, and point of interest.</h4>
-
-        <p>Interface Design Project, January-April 2014</p>
-      </div>
-      </div>
-
-      <div class ="project_description">
-        <div class ="project_name"><h3>JadeMap <a href="http://jademap.herokuapp.com/"><i class="fa fa-external-link"></i></a></h3></div>
+        <div class ="project_name"><h3>JadeMap <a href="http://jademap.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i></a></h3></div>
       <div class="project_text">
         <h4>Designed the user interface for a map-based classifieds web application, using HTML, CSS, JavaScript, etc. The application detects the user's location and displays all classifieds in the vicinity. Collaborated with team to develop mobile app using PhoneGap.</h4>
 
-        <p>3B Design Project, January-March 2013</p>
+        
       </div>
+      <p>3B Design Project, January-March 2013</p>
      
       </div>   
-    </div>
+
 
 
 
   </section><!-- @end #portfolio -->
   
  
-  <section id="contact" class="contentpg">
-   <h2>Get in Touch</h2>
-   <h4> To contact me, please leave a message below or via social media </h4>
+  <section id="contact" class="contentpg" data-link-id="contactnavlink">
+   
+
+  <div class ="section_title"><h2>Get in Touch</h2></div>
+
+   
+   
 
    <div id="mail-container">
        <form class='contact-mail' action="mailto:feyisola.agbaje@gmail.com" method="post">
@@ -327,6 +338,17 @@ $(function(){
         navigation: false
       });
     });
+  </script>
+
+  <script type="text/javascript">
+
+  $(".contentpg").bind('inview', function (event, visible) {
+  if (visible) {
+    $("#" + $(this).attr("data-link-id")).addClass("active");
+  } else {
+    $("#" + $(this).attr("data-link-id")).removeClass("active");
+  }
+});
   </script>
 
 </body>

@@ -22,9 +22,11 @@ html { overflow-y: scroll; }
   src: url('../fonts/RobotoSlab.ttf');
 }
 
+
+
 body { 
   background: #fff;
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  font-family: "chunkFont", helvetica, arial, sans-serif;
   font-size: 62.5%;
   line-height: 1;
   color: #616161;
@@ -97,7 +99,7 @@ h4 {
   display: block;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 55px;
   width: 100%;
   background: #fff;
   /*border-bottom: 2px solid #E6E6E6;*/
@@ -121,8 +123,14 @@ h4 {
   text-decoration: none;
   font-family: chunkFont;
 }
+
+
 #topnav ul li a:hover {
   background: #CECECE;
+}
+
+#topnav ul li a >.active {
+  background: red;
 }
 
 
@@ -137,14 +145,27 @@ h4 {
   background: #fff;
 }
 
+.logo {
+  font-family: logoFont;
+}
+
 #resume {
   background: #fff;
 }
 
+.section_title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
 #skills {
-  width: 400px;
+  width: 385px;
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 35px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .skills-text {
@@ -157,11 +178,18 @@ h4 {
   display: inline-block;
 }
 
+#resume h3 {
+  font-weight: bold;
+}
+
 
 #education {
-  width: 400px;
-  padding-top: 50px;
+  width: 385px;
+  padding-right: 35px;
   display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
   
 }
 
@@ -171,11 +199,14 @@ h4 {
 
 
 #pie_chart{
-  padding: 10px;
+  padding: 20px;
 }
 
 #projects {
   background: #fff;
+  height: 1200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #slides,
@@ -247,8 +278,10 @@ a:active {
 }
 
 .slides_container {
-  width: 470px;
+  width: 740px;
   display: inline-block;
+  float: left;
+ 
 }
 
 .projects_container {
@@ -260,11 +293,19 @@ a:active {
 }
 
 .project_description {
-  height: 380px;
-  
+  display: inline-block; 
+  float: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
+
 .project_text {
   height: auto;
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 .project_name {
 
@@ -299,8 +340,10 @@ a:active {
 
 #courses {
   display: inline-block;
-
-
+  width: auto;
+  float: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #experience {
@@ -309,22 +352,24 @@ a:active {
 
 #contact {
   background: #fff;
+  clear: both;
 
 }
 /* Contact form styling */
 #mail-container {
-  padding-top: 50px;
-  padding-right:50px;
+  padding: 20px 0;
   width: 600px; 
   height: 100%;
   display: inline-block;
+  float: left;
   
 }
 
 .social-container {
   width: 300px;
   display: inline-block;
-  padding-left: 150px;
+  float: right;
+  padding: 20px 0;
 }
 .social-container i {
   padding-right: 20px;
@@ -475,5 +520,8 @@ html[xmlns] .clearfix { display: block; }
     text-align: left;
     vertical-align: top;
     padding: 100px 0 0 100px;
+  }
 
+  .about i {
+    padding:10px;
   }
