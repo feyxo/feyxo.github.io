@@ -102,7 +102,7 @@ h4 {
   height: 55px;
   width: 100%;
   background: #fff;
-  /*border-bottom: 2px solid #E6E6E6;*/
+  border-bottom: 2px solid #E6E6E6;
 }
 #topnav ul  { padding-left: 80px; }
 
@@ -189,8 +189,11 @@ h4 {
   display: inline-block;
   padding-top: 20px;
   padding-bottom: 20px;
- 
-  
+}
+
+#edu_info {
+  margin: 0 auto;
+  text-align: center;
 }
 
 #resume_link {
@@ -199,7 +202,8 @@ h4 {
 
 
 #pie_chart{
-  padding: 20px;
+  padding: 20px 70px 0;
+ vertical-align: middle;
 }
 
 #projects {
@@ -508,6 +512,7 @@ html[xmlns] .clearfix { display: block; }
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   background: url('../img/me.jpg') no-repeat;
+  background-size: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
