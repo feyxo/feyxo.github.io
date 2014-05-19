@@ -258,13 +258,15 @@
    
 
    <div id="mail-container">
-       <form class='contact-mail' action="mailto:feyisola.agbaje@gmail.com" method="post">
-       
-        <input type="text" name="name" class="name" placeholder="Name">
-        <input type="text" name="email" class="email" placeholder="Email">
+
+      <?php include "send_form_email.php" ?>
+    
+       <form class='contact-mail' action="send_form_email.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" class="name" placeholder="Your Name" value = "" size = "50">
+        <input type="text" name="email" class="email" placeholder="Your Email Address" value = "" size = "50">
         <input type="text" name="subject" class="subject" placeholder="Subject">
-        <textarea name="message" class="message" placeholder="Message"></textarea>            
-        <button type="submit">Send</button>
+        <textarea name="message" class="message" placeholder="Message" rows ="7" cols ="50"></textarea>            
+        <button type="submit" value ="Send email">Send</button>
         <button type="reset">Reset</button>
       </form>
    </div>
