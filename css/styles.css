@@ -542,6 +542,7 @@ html[xmlns] .clearfix { display: block; }
 
   .about_icons i {
     padding-right: 20px;
+    padding-top: 20px;
   }
 
   .bio {
