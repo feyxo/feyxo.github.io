@@ -216,7 +216,7 @@ h4 {
   height: 1200px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #E6E6E6;
+  
 }
 
 #slides,
@@ -366,6 +366,7 @@ a:active {
   background: #F7F7F7;
   clear: both;
   border-bottom: 2px solid #E6E6E6;
+  border-top: 2px solid #E6E6E6;
 
 }
 /* Contact form styling */
