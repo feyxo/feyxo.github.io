@@ -371,7 +371,7 @@ a:active {
 /* Contact form styling */
 #mail-container {
   padding: 20px 0;
-  width: 600px; 
+  width: 67%; 
   height: 100%;
   display: inline-block;
   float: left;
@@ -379,7 +379,7 @@ a:active {
 }
 
 .social-container {
-  width: 300px;
+ width: 33%;
   display: inline-block;
   float: right;
   padding: 20px 0;
