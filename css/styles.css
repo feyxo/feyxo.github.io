@@ -211,7 +211,7 @@ h4 {
 
 #projects {
   background: #F7F7F7;
-  height: 1200px;
+  
   padding-top: 20px;
   padding-bottom: 20px;
   
@@ -296,7 +296,7 @@ a:active {
 
 .projects_container {
   display: inline-block;
-  
+  width: 33%;
   margin-left: 100px;
   padding-left: 50px;
   height: auto;
