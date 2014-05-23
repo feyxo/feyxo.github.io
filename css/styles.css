@@ -111,6 +111,7 @@ h4 {
 #topnav ul li { 
   display: block;
   width: auto;
+  
 }
 
 #topnav ul li a {
@@ -124,6 +125,7 @@ h4 {
   color: #616161;
   text-decoration: none;
   font-family: chunkFont;
+  text-transform: uppercase;
 }
 
 
@@ -131,7 +133,6 @@ h4 {
   /** background: #CECECE; */
   color: #e67632;
 }
-
 
 
 /** page sections **/
