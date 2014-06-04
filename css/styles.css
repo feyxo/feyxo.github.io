@@ -32,6 +32,7 @@ body {
   line-height: 1;
   color: #616161;
   padding-top: 70px;
+
 }
 
 br { display: block; line-height: 1.6em; } 
@@ -77,13 +78,13 @@ h1, .item-footer, h2, h3, h4, h5 {
 
 /* line 45, ../sass/screen.scss */
 h1, .item-footer {
-  font-size: 2.5em;
+  font-size: 2.2em;
   line-height: 1em; }
 
 /* line 50, ../sass/screen.scss */
 h2 {
   font-family: "chunkFont";
-  font-size: 2.2em; }
+  font-size: 1.8em; }
 
 /* line 54, ../sass/screen.scss */
 h3 {
@@ -94,6 +95,11 @@ h3 {
 h4 {
   font-family: "chunkFont";
   font-size: 1.2em; }
+
+p {
+  font-size: 1.2em;
+  padding: 5px;
+}
 
 /** page structure **/
 #topnav {
@@ -360,6 +366,8 @@ a:active {
 }
 
 #experience {
+
+  border-top: 2px solid #E6E6E6;
 
 }
 
