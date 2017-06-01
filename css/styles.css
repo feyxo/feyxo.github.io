@@ -42,6 +42,15 @@ header {
 main {
   min-height: calc(100vh - 120px);
 }
+#about {
+    background-color: #F3C9DD;
+}
+#work {
+
+}
+#contact {
+
+}
 footer {
   height: 60px;
 }
