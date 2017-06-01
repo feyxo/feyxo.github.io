@@ -42,14 +42,17 @@ header {
 main {
   min-height: calc(100vh - 120px);
 }
+section {
+  color: #fff;
+}
 #about {
-    background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);
+  background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);  
 }
 #work {
-
+  background-image: linear-gradient(to top, #1E265C 0%, #121738 100%);      
 }
 #contact {
-
+  background-image: linear-gradient(to top, #7DE0E6 0%, #86F1F7 100%);
 }
 footer {
   height: 60px;
