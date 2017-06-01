@@ -43,7 +43,7 @@ main {
   min-height: calc(100vh - 120px);
 }
 #about {
-    background-color: #F3C9DD;
+    background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);
 }
 #work {
 
