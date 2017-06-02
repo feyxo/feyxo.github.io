@@ -9,21 +9,20 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-
 </head>
 
 <body>
   <header>
   <nav id="topnav" class="clearfix">
-    <ul>
-      <li><a href="body" id="homenavlink">Feyi Agbaje</a></li>
-      <li><a href="#projects" id="projectsnavlink">Projects</a></li>
-      <li><a href="#contact" id="contactnavlink">Contact Me</a></li>
+    <a href="body" id="homenavlink" class="tablinks" onclick="openSection(event, 'about')">Feyi Agbaje</a>
+    <ul>      
+      <li><a href="#work" id="projectsnavlink" class="tablinks" onclick="openSection(event, 'work')">My Work</a></li>
+      <li><a href="#contact" id="contactnavlink" class="tablinks" onclick="openSection(event, 'contact')">Contact Me</a></li>
     </ul>
   </nav><!-- @end #topnav -->
   </header>
   <main>
-    <section id="about">
+    <section id="about" class="tabcontent">
       <article>
         <h1>Hello! My name is Feyi and I like to blah blah</h1>
         <p>I currently design web applications at Readyportal</p>
@@ -31,11 +30,11 @@
         <p>Feel free to see some of my work, view my resume, or send me an email.</p>
       </article>      
     </section>
-    <section id="work">
+    <section id="work" class="tabcontent">
       <h1>I like to apply systems thinking to my design process.</h1>
       <p>I design mostly web applications using user-centered design methods. My tools of choice range from pen + paper, whiteboards, Balsamiq, Sketch and Invision. I also write front-end code in HTML, SASS, Javascript, and AngularJS.</p>
     </section>
-    <section id="contact">
+    <section id="contact" class="tabcontent">
       <h1>Contact me</h1>
     </section>
   </main>
@@ -49,5 +48,21 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    function openSection(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+  </script>
 </body>
 </html>
