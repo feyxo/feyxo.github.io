@@ -61,8 +61,6 @@
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(tabName).style.display = "block";
-        var bgColor = document.getElementById(tabName).style.backgroundColor;
-        document.getElementById("topnav").style.backgroundColor = bgColor;
         evt.currentTarget.className += " active";
     }
     document.getElementById("homenavlink").click();
