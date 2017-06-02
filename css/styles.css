@@ -28,13 +28,17 @@ h3 {font-size: 1.999em;}
 h4 {font-size: 1.414em;}
 
 small, .font_small {font-size: 0.707em;}
-
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 html, body {
   height: 100%;
   width: 100%;
 }
 html * {
     box-sizing: border-box;
+    color: #fff;
   }
 header {
   height: 60px;
@@ -44,6 +48,38 @@ main {
 }
 section {
   color: #fff;
+}
+nav, footer .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul, footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li, footer ul li {
+  display: inline;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 15px;
+  @media all and (min-width: 1200px) {
+    max-width: 1170px;
+  }
+  @media all and (min-width: 992px) and (max-width: 1200px){
+    max-width: 970px;
+  }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    max-width: 750px;
+  }
+  
 }
 /*#about {
   background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);  

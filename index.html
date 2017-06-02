@@ -13,7 +13,7 @@
 
 <body>
   <header>
-  <nav id="topnav" class="clearfix">
+  <nav id="topnav" class="container">
     <a href="#" id="homenavlink" class="tablinks" onclick="openSection(event, 'about'); return false;">Feyi Agbaje</a>
     <ul>      
       <li><a href="#" id="projectsnavlink" class="tablinks" onclick="openSection(event, 'work'); return false;">My Work</a></li>
@@ -23,7 +23,7 @@
   </header>
   <main>
     <section id="about" class="tabcontent">
-      <article>
+      <article class="container">
         <h1>Hello! My name is Feyi and I like to blah blah</h1>
         <p>I currently design web applications at Readyportal</p>
         <p>I've also done some freelance graphic design. I graduated from University of Waterloo's System Design Engineering program in 2014.</p>
@@ -31,15 +31,19 @@
       </article>      
     </section>
     <section id="work" class="tabcontent">
-      <h1>I like to apply systems thinking to my design process.</h1>
-      <p>I design mostly web applications using user-centered design methods. My tools of choice range from pen + paper, whiteboards, Balsamiq, Sketch and Invision. I also write front-end code in HTML, SASS, Javascript, and AngularJS.</p>
+      <article class="container">
+        <h1>I like to apply systems thinking to my design process.</h1>
+        <p>I design mostly web applications using user-centered design methods. My tools of choice range from pen + paper, whiteboards, Balsamiq, Sketch and Invision. I also write front-end code in HTML, SASS, Javascript, and AngularJS.</p>
+      </article>  
     </section>
     <section id="contact" class="tabcontent">
-      <h1>Contact me</h1>
+      <article class="container">
+        <h1>Contact me</h1>
+      </article>
     </section>
   </main>
   <footer>
-    <div>
+    <div class="container">
       <a class="email">feyisola.agbaje@gmail.com</a>
       <ul>
         <li><a href=""></a><i class="fa fa-github" aria-hidden="true"></i></li>
