@@ -62,7 +62,7 @@
         }
         document.getElementById(tabName).style.display = "block";
         var bgColor = document.getElementById(tabName).style.backgroundColor;
-        document.getElementsByTagName("header").style.backgroundColor = bgColor;
+        document.getElementById("topnav").style.backgroundColor = bgColor;
         evt.currentTarget.className += " active";
     }
     document.getElementById("homenavlink").click();
