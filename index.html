@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html">
   <title>Feyi Agbaje - Product Designer</title>
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
-<!--   <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css"> -->
+  <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -41,11 +41,11 @@
   <footer>
     <div>
       <a class="email">feyisola.agbaje@gmail.com</a>
-     <!--  <ul>
+      <ul>
         <li><a href=""></a><i class="fa fa-github" aria-hidden="true"></i></li>
         <li><a href=""></a><i class="fa fa-linkedin" aria-hidden="true"></i></li>
         <li><a href=""></a><i class="fa fa-wordpress" aria-hidden="true"></i></li>
-      </ul> -->
+      </ul>
     </div>
   </footer>
 
@@ -62,19 +62,21 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
+        if ( $("#homenavlink").hasClass("active")) {
+          $("body").css("background-image","linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%)");
+
+        } 
+        if ($("#projectsnavlink").hasClass("active") ) {
+          $("body").css("background-image","linear-gradient(to top, #1E265C 0%, #121738 100%)");
+          
+        } 
+        if ($("#contactnavlink").hasClass("active") ) {
+          $("body").css("background-image","linear-gradient(to top, #7DE0E6 0%, #86F1F7 100%)");
+        }
     }
     document.getElementById("homenavlink").click();
 
-    // if ( $("#homenavlink").hasClass("active")) {
-    //   $("header").css("background-image","linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%)");
-
-    // } else if ($("#projectsnavlink").hasClass("active") ) {
-    //   $("header").css("background-image","linear-gradient(to top, #1E265C 0%, #121738 100%)");
-      
-    // } else if ($("#contactnavlink").hasClass("active") ) {
-    //   $("header").css("background-image","linear-gradient(to top, #7DE0E6 0%, #86F1F7 100%)");
-
-    // }
+    
   </script>
 </body>
 </html>
