@@ -10,6 +10,7 @@ body {
   padding: 0;
   width: 100%;
   min-width: 320px;
+  border: 8px solid #fff;
 }
 
 p {margin-bottom: 1.3em;}
@@ -37,7 +38,7 @@ a {
   cursor: pointer;
 }
 html, body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 html * {
@@ -88,7 +89,6 @@ nav ul li, footer ul li {
   }
   
 }
-
 /*#about {
   background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);  
 }
@@ -118,4 +118,10 @@ nav ul li, footer ul li {
 }
 footer {
   height: 60px;
+}
+.caseStudy {
+
+}
+.caseStudy .expanded {
+  display: none;
 }

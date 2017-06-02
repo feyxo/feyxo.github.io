@@ -35,20 +35,39 @@
         <h1>I like to apply systems thinking to my design process.</h1>
         <p>I design mostly web applications using user-centered design methods. My tools of choice range from pen + paper, whiteboards, Balsamiq, Sketch and Invision. I also write front-end code in HTML, SASS, Javascript, and AngularJS.</p>
       </article>  
+      <article class="caseStudy container" id="intake">
+        <h2>Intake portal</h2>
+        <p>Summary section. I did some things to make this happen</p>
+        <a href="#">Read Case Study</a>
+        <div class="expanded">
+          <h1>Case Study</h1>
+          <p>Lorem ipsum ipsum</p>
+        </div>
+      </article>
+      <article class="container" id="memdir">
+        <h2>Membership Directory Redesign</h2>
+        <p>Summary section. I did some things to make this happen</p>
+        <a href="#">Read Case Study</a>
+      </article>
+      <article class="container" id="gps">
+        <h2>Car GPS Display</h2>
+        <p>Summary section. I did some things to make this happen</p>
+        <a href="#">Read Case Study</a>
+      </article>
     </section>
     <section id="contact" class="tabcontent">
       <article class="container">
         <h1>Contact me</h1>
-      </article>
+      </article>     
     </section>
   </main>
   <footer>
     <div class="container">
       <a class="email">feyisola.agbaje@gmail.com</a>
       <ul>
-        <li><a href=""></a><i class="fa fa-github" aria-hidden="true"></i></li>
-        <li><a href=""></a><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-        <li><a href=""></a><i class="fa fa-wordpress" aria-hidden="true"></i></li>
+        <li><a href="https://github.com/feyxo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/feyisola/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://feyi.rocks/" target="_blank"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </footer>
@@ -68,7 +87,6 @@
         evt.currentTarget.className += " active";
         if ( $("#homenavlink").hasClass("active")) {
           $("body").css("background-image","linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%)");
-
         } 
         if ($("#projectsnavlink").hasClass("active") ) {
           $("body").css("background-image","linear-gradient(to top, #1E265C 0%, #121738 100%)");
