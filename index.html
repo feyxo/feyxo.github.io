@@ -61,7 +61,7 @@
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(tabName).style.display = "block";
-        bgColor = document.getElementById(tabName).style.backgroundColor;
+        var bgColor = document.getElementById(tabName).style.backgroundColor;
         document.getElementsByTagName("header").style.backgroundColor = bgColor;
         evt.currentTarget.className += " active";
     }
