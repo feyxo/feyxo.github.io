@@ -7,8 +7,10 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
   <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
 </head>
 
 <body>
@@ -54,79 +56,108 @@
             </div>
           </header>       
           <div class="expanded">
-            <ul class="breadcrumbs">
-              <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> /
-              <li><a href="#" class="back-to-work">Work</a></li> /
-              <li>Intake Portal</li>
-            </ul>
-            <h1>Intake Portal</h1>
-            <h2>Project Overview</h2>
-            <p>The purpose of the project was to implement an intake portal for a client’s application process across two streams. The existing process was carried out manually. All forms were filled by hand and records were entered manually into Excel/CTMS database. As a result, this process was inefficient, time-consuming, and prone to human error. Thus, there was a need to automate this process.</p>
-            <h2>The Solution</h2>
-            <p>The intake portal enables stakeholders to receive applicant data online, review the data, request more information, add additional information to client profiles, store/archive client profiles, approve and deny applications, and push data to the CTMS database upon applicant acceptance.</p>
-            <h2>My Role</h2>
-            <p>UX Designer and Front-End Developer</p>
-            <h2>Tools</h2>
-            <ul>
-              <li>Sketching, brainstorming - Pen, paper, Whiteboard, markers</li>
-              <li>Mockups/Wireframes - Balsamiq Mockups and MockupsToGo</li>
-              <li>User Interface Design - Sketch</li>
-              <li>Prototyping - Invision</li>
-              <li>Development - written in HTML, CSS, Velocity, AngularJS</li>
-            </ul>
-            <h2>UX Approach</h2>
-            <h3>Stakeholder Interviews</h3>
-            <p>In order to properly define the project scope and requirements, I conducted a series of interviews with the project owners. The goals of this meeting were as follows:</p>
-            <ul>
-              <li>Gain an understanding of the current business process</li>
-              <li>Identify pain points</li>
-              <li>Define users and user groups</li>
-              <li>Define specific process/workflow for each user/user group</li>
-              <li>Define project vision, success metrics and potential hurdles</li>
-            </ul>
-            <h3>Defining Project Requirements</h3>
-            <p>The following requirements were determined as a result of the interviews:</p>
-            <ul>
-              <li>Intake Portal for application and selection process up until approval</li>
-              <li>Intake portal to support both Homeward bound and Boundless possibilities for women for each cohort</li>
-              <li>User-friendly, easy to use, and mobile responsive</li>
-              <li>Email notification at specific milestones in application process</li>
-              <li>Granular permissions with restricted access</li>
-              <li>Data push to CTMS servers</li>
-              <li>CTMS API to integrate with Portal data (intake information)</li>
-            </ul>
-            <h3>Project Stakeholders</h3>
-            <p>The primary users include the following:</p>
-            <h4>Homeward Bound Users</h4>
-            <ul>
-              <li>Applicant</li>
-              <li>Referral Source</li>
-              <li>Reviewer</li>
-              <li>Admin</li>
-            </ul>
-            <h4>Boundless Possibilities for Women Users</h4>
-            <ul>
-              <li>Applicant</li>
-              <li>Reviewer</li>
-              <li>Admin</li>
-            </ul>
-            <em>Note: For the purpose of this case study, the focus will be on the Homeward Bound stream due to it's increased complexity</em>
-            <h3>Personas</h3>
-            <p>Based on findings from stakeholder interviews, the following personas were developed</p>
-            <h4>Vanessa Bryant (Applicant)</h4>
-            <p>Vanessa is a twenty year old single mother of two children. She has a high school diploma and rarely has access to a computer. She has no bank accounts or credit cards, lives in a homeless shelter and is very dependent on others. She wants to enroll in the HBW program because she wants to take control of her life, be more independent and provide the best for her children</p>
-            <h4>Samantha Jones (Referral Source)</h4>
-            <p>Samantha is a thirty three year old social service provider. She has a Law degree from York University, but decided to pursue social work instead because she wants to make an impact. Her goal is to help as many women get into the program as possible. However, she tends to be frustrated because she is not sure what happens with the progress after her referrals have been accepted into the program<</p>
-            <h4>Allison MacBeal (Reviewer)</h4>
-            <p>Allison is a thirty seven year old case counselor. She has a University degree and enjoys helping others improve the quality of their lives. She users her computer primarily for her job, and her internet browser of choice is Internet Explorer. She likes her job because she is able to directly impact underprivileged women and their children. She understands that there is a quota, but she really dislikes having to reject anybody from the program. She doesn’t like the fact that she spends so much time re-entering user information, and correcting previous mistakes.</p>
-            <h3>User Flows & Information Architecture</h3>
-            <p>Keeping the user requirements, Vanessa, Samantha and Allison in mind, I developed the following user flows. Then, the user screens were determined based on each user's specific flow.</p>
-            <h3>Wireframes</h3>
-            <p>An overview of the design evolution over time. These iterations were based on feedback received from user testing focus groups.</p>
-            <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePTHZCZlFueGNQTU0/preview" width="640" height="480"></iframe>
+          <div class="container">
+              <ul class="breadcrumbs">
+                <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> /
+                <li><a href="#" class="back-to-work">Work</a></li> /
+                <li>Intake Portal</li>
+              </ul>
+              <h1>Intake Portal</h1>
+              <h2>Project Overview</h2>
+              <p>The purpose of the project was to implement an intake portal for a client’s application process across two streams. The existing process was carried out manually. All forms were filled by hand and records were entered manually into Excel/CTMS database. As a result, this process was inefficient, time-consuming, and prone to human error. Thus, there was a need to automate this process.</p>
+              <h2>The Solution</h2>
+              <p>The intake portal enables stakeholders to receive applicant data online, review the data, request more information, add additional information to client profiles, store/archive client profiles, approve and deny applications, and push data to the CTMS database upon applicant acceptance.</p>
+              <h2>My Role</h2>
+              <p>UX Designer and Front-End Developer</p>
+              <h2>Tools</h2>
+              <ul>
+                <li>Sketching, brainstorming - Pen, paper, Whiteboard, markers</li>
+                <li>Mockups/Wireframes - Balsamiq Mockups and MockupsToGo</li>
+                <li>User Interface Design - Sketch</li>
+                <li>Prototyping - Invision</li>
+                <li>Development - written in HTML, CSS, Velocity, AngularJS</li>
+              </ul>
+              <h2>UX Approach</h2>
+              <h3>Stakeholder Interviews</h3>
+              <p>In order to properly define the project scope and requirements, I conducted a series of interviews with the project owners. The goals of this meeting were as follows:</p>
+              <ul>
+                <li>Gain an understanding of the current business process</li>
+                <li>Identify pain points</li>
+                <li>Define users and user groups</li>
+                <li>Define specific process/workflow for each user/user group</li>
+                <li>Define project vision, success metrics and potential hurdles</li>
+              </ul>
+              <h3>Defining Project Requirements</h3>
+              <p>The following requirements were determined as a result of the interviews:</p>
+              <ul>
+                <li>Intake Portal for application and selection process up until approval</li>
+                <li>Intake portal to support both Homeward bound and Boundless possibilities for women for each cohort</li>
+                <li>User-friendly, easy to use, and mobile responsive</li>
+                <li>Email notification at specific milestones in application process</li>
+                <li>Granular permissions with restricted access</li>
+                <li>Data push to CTMS servers</li>
+                <li>CTMS API to integrate with Portal data (intake information)</li>
+              </ul>
+              <h3>Project Stakeholders</h3>
+              <p>The primary users include the following:</p>
+              <h4>Stream A Users</h4>
+              <ul>
+                <li>Applicant</li>
+                <li>Referral Source</li>
+                <li>Reviewer</li>
+                <li>Admin</li>
+              </ul>
+              <h4>Stream B Users</h4>
+              <ul>
+                <li>Applicant</li>
+                <li>Reviewer</li>
+                <li>Admin</li>
+              </ul>
+              <em>Note: For the purpose of this case study, the focus will be on Stream B - due to it's increased complexity</em>
+              <h3>Personas</h3>
+              <p>Based on findings from stakeholder interviews, the following personas were developed</p>
+              <h4>Vanessa Bryant (Applicant)</h4>
+              <p>Vanessa is a twenty year old single mother of two children. She has a high school diploma and rarely has access to a computer. She has no bank accounts or credit cards, lives in a homeless shelter and is very dependent on others. She wants to enroll in the HBW program because she wants to take control of her life, be more independent and provide the best for her children</p>
+              <h4>Samantha Jones (Referral Source)</h4>
+              <p>Samantha is a thirty three year old social service provider. She has a Law degree from York University, but decided to pursue social work instead because she wants to make an impact. Her goal is to help as many women get into the program as possible. However, she tends to be frustrated because she is not sure what happens with the progress after her referrals have been accepted into the program<</p>
+              <h4>Allison MacBeal (Reviewer)</h4>
+              <p>Allison is a thirty seven year old case counselor. She has a University degree and enjoys helping others improve the quality of their lives. She users her computer primarily for her job, and her internet browser of choice is Internet Explorer. She likes her job because she is able to directly impact underprivileged women and their children. She understands that there is a quota, but she really dislikes having to reject anybody from the program. She doesn’t like the fact that she spends so much time re-entering user information, and correcting previous mistakes.</p>
+              <h3>User Flows & Information Architecture</h3>
+              <p>Keeping the user requirements, Vanessa, Samantha and Allison in mind, I developed the following user flows. Then, the user screens were determined based on each user's specific flow.</p>
+              <h3>Wireframes</h3>
+              <p>An overview of the design evolution over time. These iterations were based on feedback received from user testing focus groups.</p>
+              <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePTHZCZlFueGNQTU0/preview" width="640" height="480"></iframe>
 
-            <h3>Final Prototype</h3>
-            <p>The final prototype is available on <a href="">Invision.</a></p>
+              <h3>Final Prototype</h3>
+              <h4>Applicant's Journey</h4>
+              <div class="gallery">
+                <a href="images/intake/signup.png" data-lightbox="intake-final-applicant" data-title="Sign up screen"><img src="images/intake/signup.png" class="gallery-image"></a>
+                <a href="images/intake/login.png" data-lightbox="intake-final-applicant" data-title="Login Screen"><img src="images/intake/login.png" class="gallery-image"></a>
+                <a href="images/intake/app-home.png" data-lightbox="intake-final-applicant" data-title="Applicant Home page"><img src="images/intake/app-home.png" class="gallery-image"></a>             
+                <a href="images/intake/app-intro.png" data-lightbox="intake-final-applicant" data-title="Application Form"><img src="images/intake/app-intro.png" class="gallery-image"></a>
+                <a href="images/intake/app-future.png" data-lightbox="intake-final-applicant" data-title="Navigating through Application Form with previous and next buttons"><img src="images/intake/app-future.png" class="gallery-image"></a>
+                <a href="images/intake/app-closed.png" data-lightbox="intake-final-applicant" data-title="Application Form - collapsed view"><img src="images/intake/app-closed.png" class="gallery-image"></a>
+                <a href="images/intake/myapps.png" data-lightbox="intake-final-applicant" data-title="My Applications view"><img src="images/intake/myapps.png" class="gallery-image"></a>
+                <a href="images/intake/myapp-info.png" data-lightbox="intake-final-applicant" data-title="An alert is displayed if appplicant has been invited for information session or interview"><img src="images/intake/myapp-info.png" class="gallery-image"></a>
+                <a href="images/intake/myapp-selectdate.png" data-lightbox="intake-final-applicant" data-title="Applicant can select date and time from sidepanel"><img src="images/intake/myapp-selectdate.png" class="gallery-image"></a>
+                <a href="images/intake/myapp-selected.png" data-lightbox="intake-final-applicant" data-title="Applicant has selected and can submit"><img src="images/intake/myapp-selected.png" class="gallery-image"></a>
+              </div>
+              <h4>Reviewers Journey</h4>
+              <div class="gallery">
+                <a href="images/intake/signup.png" data-lightbox="intake-final-reviewer" data-title="Sign up screen"><img src="images/intake/signup.png" class="gallery-image"></a>
+                <a href="images/intake/login.png" data-lightbox="intake-final-reviewer" data-title="Login Screen"><img src="images/intake/login.png" class="gallery-image"></a>
+                <a href="images/intake/rev-dash.png" data-lightbox="intake-final-reviewer" data-title="Reviewer Dashboard view"><img src="images/intake/rev-dash.png" class="gallery-image"></a>
+                <a href="images/intake/openapps.png" data-lightbox="intake-final-reviewer" data-title="Reviewer has access to all Open Applications"><img src="images/intake/openapps.png" class="gallery-image"></a>
+                <a href="images/intake/openapps-trans.png" data-lightbox="intake-final-reviewer" data-title="Reviewer hovers to activate controls. Here, the reviewer can approve or reject"><img src="images/intake/openapps-trans.png" class="gallery-image"></a>
+                <a href="images/intake/openapps-side.png" data-lightbox="intake-final-reviewer" data-title="Reviewer clicks to leave notes/comments in sidepanel view"><img src="images/intake/openapps-side.png" class="gallery-image"></a>
+                <a href="images/intake/approved.png" data-lightbox="intake-final-reviewer" data-title="Reviewer has access to all approved applications"><img src="images/intake/approved.png" class="gallery-image"></a>
+                <a href="images/intake/approved-transition.png" data-lightbox="intake-final-reviewer" data-title="Reviewer can reopen applications if not satisfied"><img src="images/intake/approved-transition.png" class="gallery-image"></a>
+                <a href="images/intake/openapps.png" data-lightbox="intake-final-reviewer" data-title="Reopened applications are sent back to Open Applications"><img src="images/intake/openapps.png" class="gallery-image"></a>
+                <a href="images/intake/rejected-apps.png" data-lightbox="intake-final-reviewer" data-title="Reviewer has access to all rejected applications"><img src="images/intake/rejected-apps.png" class="gallery-image"></a>
+                <a href="images/intake/rejectedapps-trans.png" data-lightbox="intake-final-reviewer" data-title="Reviewer can reopen applications if she is having second thoughts"><img src="images/intake/rejectedapps-trans.png" class="gallery-image"></a>
+                <a href="images/intake/openapps.png" data-lightbox="intake-final-reviewer" data-title="Reopened applications are sent back to Open Applications"><img src="images/intake/openapps.png" class="gallery-image"></a>
+              </div>
+            </div>
             <h3>Design Justifications</h3>
             <h2>Conclusions</h2>
         </article>
@@ -143,87 +174,107 @@
             </div>
           </header>
           <div class="expanded">
-            <ul class="breadcrumbs">
-              <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> /
-              <li><a href="#" class="back-to-work">Work</a></li> /
-              <li>Membership Directory Redesign</li>
-            </ul>
-            <h1>Redesigning Membership Directory Feature</h1>
-            <h2>Project Overview</h2>
-            <p>The goal of this project is to improve Readyportal's Membership Directory feature by making it more user friendly and modern.</p>
-            <h2>The Current Situation</h2>
-            <p>Below is a the current default membership directory implementation. Other than a few style changes (to match client implementation), this feature has never been upgraded.</p>
-            <h2>The Solution</h2>
-            <p>The proposed solution makes it easier for admin users to add new users, edit and delete current users, edit user profile, and search within the Membership List view by reducing the number of steps taken to achieve these actions.</p>
-            <h2>Project Duration</h2>
-            <p>This project duration was a 48 hour sprint in between projects</p>
-            <h2>My Role</h2>
-            <p>UX Designer and Front-end Developer</p>
-            <h2>Tools</h2>
-            <ul>
-              <li>Brainstorming - Whiteboard, Pen and paper</li>
-              <li>User Feedback - Google Forms (for questionnaire)</li>
-              <li>Wireframing - Balsamiq Mockups</li>
-              <li>Prototyping/Devlopment - HTML, CSS, Velocity, Javascript</li>
-            </ul>
-            <h2>UX Approach</h2>
-            <h3>Identifying the Problem</h3>
-            <p>In order to identify our users' pain-points, I conducted interviews with five power users. The questions asked are as follows:</p>
-            <ol>
-              <li>Do you use the membership directory feature?</li>
-              <li>If yes, how often do you use this feature per week?</li>
-              <li>What is your objective when you use this feature?</li>
-              <li>Can you show me how you use this feature?</li>
-              <li>What do you like about this feature?</li>
-              <li>What frustrates you about this feature?</li>
-              <li>Do you have any suggestions to improve this feature?</li>
-            </ol>
-            <h3>Recommendations</h3>
-            <p>The recommendations from the above exercise were:</p>
-            <ul>
-              <li> Reduce the number of steps it takes to edit user information</li>
-              <li> Simplify search function</li>
-              <li> Feature should be responsive/look just as good on mobile</li>
-              <li> Improve look/feel of membership directory feature – make it more modern</li>
-              <li> Improve pagination</li>
-              <li>Make it easier to add/remove users from user groups</li>
-            </ul>
-            <h3>Wireframes</h3>
-            <p>With the user interview feedback in mind, I designed the following wireframes in Balsamiq. The wireframes includes the following changes:</p>
-            <h4>Search functionality in the list view:</h4>
-            <p>The current implementation only had an advanced search functionality. Thus, users had to click "Advanced Member Search",  enter a search query,  and click submit for each search. The proposed solution has a live search in the list view, resulting in only one action.</p>
-            <h4>Add new user button in the list view:</h4>
-            <p>In the current implementation, new users could only be added from the "Admin Wizard" screen which is separate from the Membership Directory screen. This was added in order to make it easier for users to manage all user information from the same view.</p>
-            <h4>Edit button in the list view:</h4>
-            <p>The process for editing user information in the current implementation was as follows:</p>
-            <ul>
-              <li>Click user name to view user profile</li>
-              <li>In the user profile view, click edit user information</li>
-            </ul>
-            <p>With the edit button in the list view, users are able to skip this process.</p>
-            <h4>Adding/Removing Users from group using a checkbox:</h4>
-            <p>In the current implementation, this process was as follows:</p>
-            <ul>
-              <li>Click other actions</li>
-              <li>Select Add to Group or Remove from group</li>
-              <li>User is directed to Group Security page</li>
-              <li>User clicks submit from Group Security page</li>
-            </ul>
-            <p>The proposed solution completes these actions in just two clicks., as follows:</p>
-            <ul>
-              <li>Click other actions</li>
-              <li>Check or uncheck to add or remove from group</li>
-            </ul>
-            <h2>Working Solution</h2>
-            <p>Once the wireframes were tested and approved, I went straight to code this time. We decided to use the default Material Design template due to time constraints. Below are live screenshots of the feature:</p>
-            <h2>Constraints</h2>
-            <ul>
-              <li>Time: I had 48 hours to complete a redesign and development.</li>
-              <li>Less than ideal user sample size: I was only able to interview 5 users in such a short time frame. Ideally, a larger sample size would produce better results.</li>
-              <li>Design: If I had more time, I wouldn't use a default Material Design template, because the rest of our product (and custom implementations) do not follow the same theme. As a result, the Membership Directory page is not cohesive with other parts of our product.</li>
-            </ul>
-            <h2>Conclusions</h2>
-           <p> It's amazing what can be achieved in such a short period of time when we let go of our need for perfection. The challenge here was to produce a minimum viable product in a short time frame, without compromising in terms of providing value.</p>
+            <div class="container">
+              <ul class="breadcrumbs">
+                <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> /
+                <li><a href="#" class="back-to-work">Work</a></li> /
+                <li>Membership Directory Redesign</li>
+              </ul>
+              <h1>Redesigning Membership Directory Feature</h1>
+              <h2>Project Overview</h2>
+              <p>The goal of this project is to improve Readyportal's Membership Directory feature by making it more user friendly and modern.</p>
+              <h2>The Current Situation</h2>
+              <p>Below is a the current default membership directory implementation. Other than a few style changes (to match client implementation), this feature has never been upgraded.</p>
+              <div class="gallery">
+                <a href="images/memdir/Membership-list.png" data-lightbox="memdir-old" data-title="Membership List View"><img src="images/memdir/Membership-list.png" class="gallery-image"></a>
+                <a href="images/memdir/Membership-detail.png" data-lightbox="memdir-old" data-title="Membership Detail View"><img src="images/memdir/Membership-detail.png" class="gallery-image"></a>
+              </div>
+              <h2>The Solution</h2>
+              <p>The proposed solution makes it easier for admin users to add new users, edit and delete current users, edit user profile, and search within the Membership List view by reducing the number of steps taken to achieve these actions.</p>
+              <h2>Project Duration</h2>
+              <p>This project duration was a 48 hour sprint in between projects</p>
+              <h2>My Role</h2>
+              <p>UX Designer and Front-end Developer</p>
+              <h2>Tools</h2>
+              <ul>
+                <li>Brainstorming - Whiteboard, Pen and paper</li>
+                <li>User Feedback - Google Forms (for questionnaire)</li>
+                <li>Wireframing - Balsamiq Mockups</li>
+                <li>Prototyping/Devlopment - HTML, CSS, Velocity, Javascript</li>
+              </ul>
+              <h2>UX Approach</h2>
+              <h3>Identifying the Problem</h3>
+              <p>In order to identify our users' pain-points, I conducted interviews with five power users. The questions asked are as follows:</p>
+              <ol>
+                <li>Do you use the membership directory feature?</li>
+                <li>If yes, how often do you use this feature per week?</li>
+                <li>What is your objective when you use this feature?</li>
+                <li>Can you show me how you use this feature?</li>
+                <li>What do you like about this feature?</li>
+                <li>What frustrates you about this feature?</li>
+                <li>Do you have any suggestions to improve this feature?</li>
+              </ol>
+              <h3>Recommendations</h3>
+              <p>The recommendations from the above exercise were:</p>
+              <ul>
+                <li> Reduce the number of steps it takes to edit user information</li>
+                <li> Simplify search function</li>
+                <li> Feature should be responsive/look just as good on mobile</li>
+                <li> Improve look/feel of membership directory feature – make it more modern</li>
+                <li> Improve pagination</li>
+                <li>Make it easier to add/remove users from user groups</li>
+              </ul>
+              <h3>Wireframes</h3>
+              <p>With the user interview feedback in mind, I designed the following wireframes in Balsamiq. The wireframes includes the following changes:</p>
+              <div class="gallery">
+                <a href="images/memdir/wireframe-list.png" data-lightbox="memdir-wireframe" data-title="Membership List View"><img src="images/memdir/wireframe-list.png" class="gallery-image"></a>
+                <a href="images/memdir/wireframe-addremove.png" data-lightbox="memdir-wireframe" data-title="Membership List View - Add or Remove from group"><img src="images/memdir/wireframe-addremove.png" class="gallery-image"></a>
+              </div>
+              <h4>Search functionality in the list view:</h4>
+              <p>The current implementation only had an advanced search functionality. Thus, users had to click "Advanced Member Search",  enter a search query,  and click submit for each search. The proposed solution has a live search in the list view, resulting in only one action.</p>
+              <h4>Add new user button in the list view:</h4>
+              <p>In the current implementation, new users could only be added from the "Admin Wizard" screen which is separate from the Membership Directory screen. This was added in order to make it easier for users to manage all user information from the same view.</p>
+              <h4>Edit button in the list view:</h4>
+              <p>The process for editing user information in the current implementation was as follows:</p>
+              <ul>
+                <li>Click user name to view user profile</li>
+                <li>In the user profile view, click edit user information</li>
+              </ul>
+              <p>With the edit button in the list view, users are able to skip this process.</p>
+              <h4>Adding/Removing Users from group using a checkbox:</h4>
+              <p>In the current implementation, this process was as follows:</p>
+              <ul>
+                <li>Click other actions</li>
+                <li>Select Add to Group or Remove from group</li>
+                <li>User is directed to Group Security page</li>
+                <li>User clicks submit from Group Security page</li>
+              </ul>
+              <p>The proposed solution completes these actions in just two clicks., as follows:</p>
+              <ul>
+                <li>Click other actions</li>
+                <li>Check or uncheck to add or remove from group</li>
+              </ul>
+              <h2>Working Solution</h2>
+              <p>Once the wireframes were tested and approved, I went straight to code this time. We decided to use the default Material Design template due to time constraints. Below are live screenshots of the feature:</p>
+              <div class="gallery">
+                <a href="images/memdir/member-list-overview.png" data-lightbox="memdir-solution" data-title="Membership List View"><img src="images/memdir/member-list-overview.png" class="gallery-image"></a>         
+                <a href="images/memdir/member-list-modify-group.png" data-lightbox="memdir-solution" data-title="Modify Group Memberships"><img src="images/memdir/member-list-modify-group.png" class="gallery-image"></a>
+                <a href="images/memdir/member-list-assign.png" data-lightbox="memdir-solution" data-title="Assign/Remove user from group"><img src="images/memdir/member-list-assign.png" class="gallery-image"></a>
+                <a href="images/memdir/member-list-edit.png" data-lightbox="memdir-solution" data-title="Edit user's profile"><img src="images/memdir/member-list-edit.png" class="gallery-image"></a>
+                <a href="images/memdir/member-list-delete.png" data-lightbox="memdir-solution" data-title="Membership List View"><img src="images/memdir/member-list-delete.png" class="gallery-image"></a>            
+                <a href="images/memdir/member-list-search.png" data-lightbox="memdir-solution" data-title="Search member listing"><img src="images/memdir/member-list-search.png" class="gallery-image"></a>
+                <a href="images/memdir/member-list-view.png" data-lightbox="memdir-solution" data-title="View user's profile"><img src="images/memdir/member-list-view.png" class="gallery-image"></a>
+                <a href="images/memdir/user-profile-view.png" data-lightbox="memdir-solution" data-title="User profile View"><img src="images/memdir/user-profile-view.png" class="gallery-image"></a>
+              </div>
+              <h2>Constraints</h2>
+              <ul>
+                <li>Time: I had 48 hours to complete a redesign and development.</li>
+                <li>Less than ideal user sample size: I was only able to interview 5 users in such a short time frame. Ideally, a larger sample size would produce better results.</li>
+                <li>Design: If I had more time, I wouldn't use a default Material Design template, because the rest of our product (and custom implementations) do not follow the same theme. As a result, the Membership Directory page is not cohesive with other parts of our product.</li>
+              </ul>
+              <h2>Conclusions</h2>
+             <p> It's amazing what can be achieved in such a short period of time when we let go of our need for perfection. The challenge here was to produce a minimum viable product in a short time frame, without compromising in terms of providing value.</p>
+           </div>
           </div>       
         </article>
         <!-- Interface Design - Car GPS -->
@@ -239,97 +290,147 @@
             </div>
           </header> 
           <div class="expanded">
-            <ul class="breadcrumbs">
-              <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> / 
-              <li><a href="#" class="back-to-work">Work</a></li> /
-              <li>In Car GPS Navigation</li>        
-            </ul>
-            <h1>In Car GPS Navigation</h1>
-            <h2>Project Overview</h2>
-            <p>The purpose of this project was to apply user-centered design methods to improve the functionality of the GPS Navigation System.</p>
-            <h2>My Role</h2>
-            <p>UX Designer</p>
-            <h2>Project Duration</h2>
-            <p>This project was completed in a 6 week time-period in 2014.</p>
-            <h2>Tools</h2>
-            <p>Balsamiq, Adobe Photoshop</p>
-            <h2>UX Approach</h2>
-            <p>For this project, the requirements were gathered using the following processes:</p>
-            <h3>User Personas</h3>
-            <h3>Task Analysis</h3>
-            <p>Task analysis in this section has been carried out on a generic navigational display in a Toyota Rav4.</p>
-            <h4>Getting directions to an unknown address using in-car GPS navigation system</h4>
-            <ol>
-              <li>Turn the car on</li>
-              <li>Press “Dest” button</li>
-              <li>Press “Address”</li>
-              <li>Select “Street Address”</li>
-              <li>Enter house number using touchscreen</li>
-              <li>Enter street name using touchscreen</li>
-              <li>Select correct address from Match list</li>
-              <li>Push “Go to” button</li>
-              <li>To choose alternate routes, click “x routes” button</li>
-              <li>Select desired route</li>
-              <li>Click ok</li>
-            </ol>
-            <h4>Getting directions to a previous destination using in-car GPS navigation system</h4>
-            <ol>
-              <li>Turn the car on</li>
-              <li>Press “Dest” button</li>
-              <li>Press “Previous Destinations”</li>
-              <li>Select destination from list</li>
-              <li>Push “Go to” button</li>
-              <li>To choose alternate routes, click “x routes” button</li>
-              <li>Select desired route</li>
-              <li>Click ok</li>
-            </ol>
-            <h3>Developing Requirements</h3>
-            <p>From the above tasks, the following requirements were derived:</p>
-            <h3>Developing Requirements</h3>
-            <h4>Touch Sensitive User Interface:</h4>
-            <p>The system needs to display GPS information to the user and also allow the user to input addresses. An easy way to do this is using a touchscreen display because it serves both input and output purposes.</p>
-            <h4>Easy to Use:</h4>
-            <p>ince majority of the users will be driving and using the system simultaneously, it is necessary for tasks to be completed in as few steps as possible.</p>
-            <h4>Input address information:</h4>
-            <p>The GPS system needs to be able to process address data entered by the user.</p>
-            <h4>Save previous destinations:</h4>
-            <p>The GPS system should save previously entered locations, so that the user does not always have to enter addresses every time the system is used.</p>
-            <h4>Ability to select desired route:</h4>
-            <p>The system should give the user the option to select from a variety of routes to the location.</p>
-            <h3>User Flow</h3>
-            <p>The user flow for the system is as follows:</p>
-            <ol>
-              <li>User selects either new address or previous destination option</li>
-              <li>If previous destination selected, go to step 4. User enters address</li>
-              <li>User selects matching address from list. Go to step 5</li>
-              <li>User selects destination from list of previous destinations</li>
-              <li>User selects desired travel route</li>
-            </ol>
-            <p>As a result, the critical paths while navigating are:</p>
-            <h3>Wireframes</h3>
-            <p>With these requirements in mind, I designed the wireframes in Balsamiq Mockups.</p>
-            <h3>Design Review</h3>
-            <p>The design review was carried out using the System Usability Scale, SUS. The SUS provides a quick and effective method to measure the usability of a system. It is easy to administrate, and can be used in small sample sizes.</p>
-            <p>Three types of participants were examined:</p>
-            <ol>
-              <li>Novice (N): This is someone who has little to no experience using secondary car displays. This encompasses people without cars, those who depend on public transit and/or those who drive older cars without navigational displays.</li>
-              <li>Stakeholder (S): This is someone who uses a navigational display system on a daily basis. This user typically drives a newer model car with a secondary display.</li>
-              <li>Casual user (CU): An occasional user.</li>
-            </ol>
-            <h4>Advantages and Limitations</h4>
-            <p>The biggest strength of the GPS display design is the ease of use, as suggested by the high scores of item 3 and item 8. In answering these two questions, it was realized that the users usually find the system easy and not cumbersome to use. Additionally, the test users stated that they do not need to learn a lot of content before using the system. The lowest score being item number 5 and 6, exposes the major weakness in this design being inconsistencies with the primary display design; however, future improvements can be made to make the styling more consistent.</p>
-            <h3>Prototype</h3>
-            <h3>Design Justifications</h3>
-            <h4>Navigation</h4>
-            <p>The secondary display is a touch screen device. Taking this into consideration, the aim was to design an interface that reduced the number of interactions between the user and the interface. As a result, tabbed navigation was implemented to switch between the three navigation tasks. This greatly reduced the interactions, when compared with the current navigation systems used in cars. The selected tab is highlighted; thus preventing the user from getting lost as they are always aware of the selection at every point in time. Within the selected tabs, buttons were implemented for navigation. Back buttons were used to allow the user freely navigate back and forth within the system.</p>
-            <h4>Layout</h4>
-            <p>he in-car GPS systems are typically small in size. As a result, it was necessary to use the whole screen for visibility purposes. The tabs/headers were placed at the top of the screen. The lists and dialogue boxes were centered, and the buttons were justified to be inline with the lists/dialogue boxes when used.</p>
-            <h4>Colour & Icon Design</h4>
-            <p>The colours and icons were kept very simple and minimal, using black, white, greys and green. The selected tabs all have a dark grey background colour. Non-selected headings and buttons are lighter grey, while selected buttons are green. The text colour varied from white against a grey background, black against a white background, and green when selected in an input box. The use of green for selected items gives the users a visual feedback, making them aware of what is happening.</p>
-            <h4>Fonts & Typography</h4>
-            <p>Uppercase typography was used across the system to enhance visibility. The use of the system would simultaneously be driving; thus, it is necessary to have the fonts as easy to read as possible in order to save time and enhance efficiency. The headers utilized larger sized fonts in order to enhance salience. Also, the same font (bold Montserrat)  was used across the system for consistency purposes.</p>
-            <h4>Controls</h4>
-            <p>The in-car GPS system uses a touch-screen interface, and the accepted gesture is a push/press action. The at rest buttons are grey, while the active buttons are green. Scrollbars are also utilized for list navigation.</p>
+            <div class="container">
+              <ul class="breadcrumbs">
+                <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> / 
+                <li><a href="#" class="back-to-work">Work</a></li> /
+                <li>In Car GPS Navigation</li>        
+              </ul>
+              <h1>In Car GPS Navigation</h1>
+              <h2>Project Overview</h2>
+              <p>The purpose of this project was to apply user-centered design methods to improve the functionality of the GPS Navigation System.</p>
+              <h2>My Role</h2>
+              <p>UX Designer</p>
+              <h2>Project Duration</h2>
+              <p>This project was completed in a 6 week time-period in 2014.</p>
+              <h2>Tools</h2>
+              <p>Balsamiq, Adobe Photoshop</p>
+              <h2>UX Approach</h2>
+              <p>For this project, the requirements were gathered using the following processes:</p>
+              <h3>User Personas</h3>
+              <h3>Task Analysis</h3>
+              <p>Task analysis in this section has been carried out on a generic navigational display in a Toyota Rav4.</p>
+              <h4>Getting directions to an unknown address using in-car GPS navigation system</h4>
+              <ol>
+                <li>Turn the car on</li>
+                <li>Press “Dest” button</li>
+                <li>Press “Address”</li>
+                <li>Select “Street Address”</li>
+                <li>Enter house number using touchscreen</li>
+                <li>Enter street name using touchscreen</li>
+                <li>Select correct address from Match list</li>
+                <li>Push “Go to” button</li>
+                <li>To choose alternate routes, click “x routes” button</li>
+                <li>Select desired route</li>
+                <li>Click ok</li>
+              </ol>
+              <h4>Getting directions to a previous destination using in-car GPS navigation system</h4>
+              <ol>
+                <li>Turn the car on</li>
+                <li>Press “Dest” button</li>
+                <li>Press “Previous Destinations”</li>
+                <li>Select destination from list</li>
+                <li>Push “Go to” button</li>
+                <li>To choose alternate routes, click “x routes” button</li>
+                <li>Select desired route</li>
+                <li>Click ok</li>
+              </ol>
+              <h3>Developing Requirements</h3>
+              <p>From the above tasks, the following requirements were derived:</p>
+              <h3>Developing Requirements</h3>
+              <h4>Touch Sensitive User Interface:</h4>
+              <p>The system needs to display GPS information to the user and also allow the user to input addresses. An easy way to do this is using a touchscreen display because it serves both input and output purposes.</p>
+              <h4>Easy to Use:</h4>
+              <p>ince majority of the users will be driving and using the system simultaneously, it is necessary for tasks to be completed in as few steps as possible.</p>
+              <h4>Input address information:</h4>
+              <p>The GPS system needs to be able to process address data entered by the user.</p>
+              <h4>Save previous destinations:</h4>
+              <p>The GPS system should save previously entered locations, so that the user does not always have to enter addresses every time the system is used.</p>
+              <h4>Ability to select desired route:</h4>
+              <p>The system should give the user the option to select from a variety of routes to the location.</p>
+              <h3>User Flow</h3>
+              <p>The user flow for the system is as follows:</p>
+              <ol>
+                <li>User selects either new address or previous destination option</li>
+                <li>If previous destination selected, go to step 4. User enters address</li>
+                <li>User selects matching address from list. Go to step 5</li>
+                <li>User selects destination from list of previous destinations</li>
+                <li>User selects desired travel route</li>
+              </ol>
+              <p>As a result, the critical paths while navigating are:</p>
+              <h3>Wireframes</h3>
+              <p>With these requirements in mind, I designed the wireframes in Balsamiq Mockups.</p>
+              <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePbnAtS0ZjR3hsdWM/preview" width="640" height="480"></iframe>
+              <h3>Design Review</h3>
+              <p>The design review was carried out using the System Usability Scale, SUS. The SUS provides a quick and effective method to measure the usability of a system. It is easy to administrate, and can be used in small sample sizes.</p>
+              <p>Three types of participants were examined:</p>
+              <ol>
+                <li>Novice (N): This is someone who has little to no experience using secondary car displays. This encompasses people without cars, those who depend on public transit and/or those who drive older cars without navigational displays.</li>
+                <li>Stakeholder (S): This is someone who uses a navigational display system on a daily basis. This user typically drives a newer model car with a secondary display.</li>
+                <li>Casual user (CU): An occasional user.</li>
+              </ol>
+              <h4>Advantages and Limitations</h4>
+              <p>The biggest strength of the GPS display design is the ease of use, as suggested by the high scores of item 3 and item 8. In answering these two questions, it was realized that the users usually find the system easy and not cumbersome to use. Additionally, the test users stated that they do not need to learn a lot of content before using the system. The lowest score being item number 5 and 6, exposes the major weakness in this design being inconsistencies with the primary display design; however, future improvements can be made to make the styling more consistent.</p>
+              <h3>Prototype</h3>
+              <h4>Navigating to a new address</h4>
+              <div class="gallery">
+                <a href="images/gps/new/newaddress1.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress1.png"></a>
+                <a href="images/gps/new/newaddress2.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress2.png"></a>
+                <a href="images/gps/new/newaddress3.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress3.png"></a>
+                <a href="images/gps/new/newaddress4.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress4.png"></a>
+                <a href="images/gps/new/newaddress5.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress5.png"></a>
+                <a href="images/gps/new/newaddress6.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress6.png"></a>
+                <a href="images/gps/new/newaddress7.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress7.png"></a>
+                <a href="images/gps/new/newaddress8.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress8.png"></a>
+                <a href="images/gps/new/newaddress9.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress9.png"></a>
+                <a href="images/gps/new/newaddress10.png" data-lightbox="gps-new" data-title=""><img class="gallery-image" src="images/gps/new/newaddress10.png"></a>
+              </div>
+              <h4>Navigating to a a previous address</h4>
+                <div class="gallery">
+                  <a href="images/gps/prev/prevdest.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest2.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest2.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest3.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest3.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest4.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest4.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest5.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest5.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest6.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest6.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest7.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest7.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest8.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest8.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest9.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest9.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest10.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest10.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest11.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest11.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest12.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest12.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest13.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest13.png" class="gallery-image"></a>
+                  <a href="images/gps/prev/prevdest15.png" data-lightbox="gps-prev" data-title=""><img src="images/gps/prev/prevdest15.png" class="gallery-image"></a>
+                </div>
+              <h4>Navigating to a point of interest</h4> 
+              <div class="gallery">
+                <a href="images/gps/poi/poi1.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi1.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi2.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi2.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi3.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi3.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi4.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi4.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi5.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi5.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi6.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi6.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi7.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi7.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi8.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi8.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi9.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi9.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi10.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi10.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi11.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi11.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi12.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi12.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi13.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi13.png" class="gallery-image"></a>
+                <a href="images/gps/poi/poi14.png" data-lightbox="gps-poi" data-title=""><img src="images/gps/poi/poi14.png" class="gallery-image"></a>
+              </div>          
+              <h3>Design Justifications</h3>
+              <h4>Navigation</h4>
+              <p>The secondary display is a touch screen device. Taking this into consideration, the aim was to design an interface that reduced the number of interactions between the user and the interface. As a result, tabbed navigation was implemented to switch between the three navigation tasks. This greatly reduced the interactions, when compared with the current navigation systems used in cars. The selected tab is highlighted; thus preventing the user from getting lost as they are always aware of the selection at every point in time. Within the selected tabs, buttons were implemented for navigation. Back buttons were used to allow the user freely navigate back and forth within the system.</p>
+              <h4>Layout</h4>
+              <p>he in-car GPS systems are typically small in size. As a result, it was necessary to use the whole screen for visibility purposes. The tabs/headers were placed at the top of the screen. The lists and dialogue boxes were centered, and the buttons were justified to be inline with the lists/dialogue boxes when used.</p>
+              <h4>Colour & Icon Design</h4>
+              <p>The colours and icons were kept very simple and minimal, using black, white, greys and green. The selected tabs all have a dark grey background colour. Non-selected headings and buttons are lighter grey, while selected buttons are green. The text colour varied from white against a grey background, black against a white background, and green when selected in an input box. The use of green for selected items gives the users a visual feedback, making them aware of what is happening.</p>
+              <h4>Fonts & Typography</h4>
+              <p>Uppercase typography was used across the system to enhance visibility. The use of the system would simultaneously be driving; thus, it is necessary to have the fonts as easy to read as possible in order to save time and enhance efficiency. The headers utilized larger sized fonts in order to enhance salience. Also, the same font (bold Montserrat)  was used across the system for consistency purposes.</p>
+              <h4>Controls</h4>
+              <p>The in-car GPS system uses a touch-screen interface, and the accepted gesture is a push/press action. The at rest buttons are grey, while the active buttons are green. Scrollbars are also utilized for list navigation.</p>
+            </div>
           </div>     
         </article>
       </div>
