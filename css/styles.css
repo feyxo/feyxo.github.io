@@ -6,6 +6,10 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: #333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
 }
 
 p {margin-bottom: 1.3em;}
@@ -55,6 +59,7 @@ nav, footer .container{
   justify-content: space-between;;
   align-items: center;
   flex-wrap: wrap;
+  height: 100%;
 }
 nav ul, footer ul {
   list-style-type: none;
@@ -63,7 +68,9 @@ nav ul, footer ul {
 }
 nav ul li, footer ul li {
   display: inline;
+  margin: 0 8px;
 }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -81,6 +88,7 @@ nav ul li, footer ul li {
   }
   
 }
+
 /*#about {
   background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);  
 }
