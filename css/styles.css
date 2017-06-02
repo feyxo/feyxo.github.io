@@ -32,10 +32,10 @@ small, .font_small {font-size: 0.707em;}
 html, body {
   height: 100%;
   width: 100%;
-  * {
+}
+html * {
     box-sizing: border-box;
   }
-}
 header {
   height: 60px;
 }
