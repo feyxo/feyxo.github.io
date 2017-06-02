@@ -45,7 +45,7 @@ html * {
     box-sizing: border-box;
     color: #fff;
   }
-header {
+#header {
   height: 60px;
 }
 main {
@@ -62,12 +62,12 @@ nav, footer .container{
   flex-wrap: wrap;
   height: 100%;
 }
-nav ul, footer ul {
+nav ul, footer ul, .expanded .breadcrumbs {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-nav ul li, footer ul li {
+nav ul li, footer ul li, .expanded .breadcrumbs li {
   display: inline;
   margin: 0 8px;
 }
@@ -77,7 +77,7 @@ nav ul li, footer ul li {
   max-width: 1200px;
   margin: auto;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 0 16px;
   @media all and (min-width: 1200px) {
     max-width: 1170px;
   }
@@ -119,9 +119,84 @@ nav ul li, footer ul li {
 footer {
   height: 60px;
 }
+.caseStudies {
+  background-color: #fff;
+  color: #333;
+  width: 90%;
+  padding: 32px 16px;
+}
+.caseStudies * {
+  color: #333;
+}
 .caseStudy {
-
+  float: none;
+  clear: both;
+  margin-bottom: 48px;
+  border-bottom: 3px solid #121738;
+}
+.caseStudy header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.caseStudy header h2 {
+  margin-top: 0;
+}
+.caseStudy header .left, .caseStudy header .right {
+  width: 50%;
+  padding: 0 32px;
+}
+.caseStudy header .left { 
+  text-align: right;
+}
+.caseStudy header .right {
+  overflow: hidden;
+  max-height: 300px;
+}
+#memdir .left {
+  order: 2;
+  text-align: left;
+}
+#memdir .right {
+  order: 1;
 }
 .caseStudy .expanded {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  color: #333;
+  -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.caseStudy .expanded * {
+  color: #333;
+}
+.caseStudy img {
+  display: block;
+  width: 100%;
+}
+@media all and (max-width: 768px){
+  .caseStudy header {
+    flex-direction: column;
+  }
+  .caseStudy header .left, .caseStudy header .right {
+    width: 100%;
+    text-align: center;
+  }
+  .caseStudy header .left {
+    margin-bottom: 16px;
+  }
+  #memdir .left {
+    order: 1;
+  }
+  #memdir .right {
+  order: 2;
+}
 }
