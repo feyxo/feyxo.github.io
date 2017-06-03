@@ -11,7 +11,7 @@ body {
   width: 100%;
   min-width: 320px;
   border: 8px solid #fff;
-  background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);  
+  background-image: linear-gradient(to top, #EDB5BD 0%, #ff8fa4 100%);  
 }
 
 p {margin-bottom: 1.3em;}
@@ -122,19 +122,11 @@ nav a:active, nav a:hover, nav a.active, footer a:active, footer a:hover, footer
 #topnav {
   padding: 16px;
 }
-/*#about {
-  background-image: linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%);  
-}
-#work {
-  background-image: linear-gradient(to top, #1E265C 0%, #121738 100%);      
-}
-#contact {
-  background-image: linear-gradient(to top, #7DE0E6 0%, #86F1F7 100%);
-}*/
+
+
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 }
@@ -160,7 +152,7 @@ section > header.container {
   color: #121738
 }
 #work a {
-  color: #F2C2C7;
+  color: #ff8fa4;
   transition: .15s ease;
 }
 #work a:hover, #about a:hover {
@@ -276,6 +268,18 @@ section > header.container {
     order: 1;
   }
   #memdir .right {
-  order: 2;
-}
+    order: 2;
+  }
+  nav, footer .container {
+    flex-direction: column;
+  }
+  #topnav {
+    text-align: center;
+  }
+  #homenavlink {
+    margin-bottom: 16px;
+  }
+  /*#homenavlink, footer .email {
+    padding-bottom: 16px;
+  }*/
 }
