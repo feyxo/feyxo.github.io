@@ -119,7 +119,7 @@ nav a:active, nav a:hover, nav a.active, footer a:active, footer a:hover, footer
   }
   
 }
-#topnav {
+#topnav, footer .container {
   padding: 16px;
 }
 
@@ -276,10 +276,7 @@ section > header.container {
   #topnav {
     text-align: center;
   }
-  #homenavlink {
-    margin-bottom: 16px;
-  }
-  /*#homenavlink, footer .email {
+  #homenavlink, footer .email {
     padding-bottom: 16px;
-  }*/
+  }
 }
