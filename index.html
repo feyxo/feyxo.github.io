@@ -21,7 +21,8 @@
     <a href="#" id="homenavlink" class="tablinks" onclick="openSection(event, 'about'); return false;">Feyi Agbaje</a>
     <ul>      
       <li><a href="#" id="projectsnavlink" class="tablinks" onclick="openSection(event, 'work'); return false;">My Work</a></li>
-      <li><a href="#" id="contactnavlink" class="tablinks" onclick="openSection(event, 'contact'); return false;">Contact Me</a></li>
+      <li><a href="https://drive.google.com/file/d/0BwgKoYbgFYePTllQOXBuLTk0WjQ/view?usp=sharing" target="_blank">Resume</a></li>
+      <li><a href="mailto:feyisola.agbaje@gmail.com" target="_blank">feyisola.agbaje@gmail.com</a></li>
     </ul>
   </nav><!-- @end #topnav -->
   </header>
@@ -30,16 +31,16 @@
   <!-- About tab -->
     <section id="about" class="tabcontent">
       <header class="container">
-        <h1>Hello! My name is Feyi and I like to blah blah</h1>
-        <p>I currently design web applications at Readyportal</p>
-        <p>I've also done some freelance graphic design. I graduated from University of Waterloo's System Design Engineering program in 2014.</p>
-        <p>Feel free to see some of my work, view my resume, or send me an email.</p>
+        <h1>Hello! My name is Feyi and I like to make things.</h1>
+        <p>I currently design (and develop) web applications at Readyportal. I love the design process, but CSS excites me a lot as well.</p>
+        <p>I graduated from University of Waterloo's System Design Engineering program in 2014.</p>
+        <p>Here's some of <a href="#" onclick="openSection(event, 'work'); return false;" target="_blank">my work</a>. You can also <a href="https://drive.google.com/file/d/0BwgKoYbgFYePTllQOXBuLTk0WjQ/view?usp=sharing" target="_blank">view my resume</a> or <a href="mailto:feyisola.agbaje@gmail.com" target="_blank">send me an email.</a></p>
       </header>      
     </section> <!-- End about -->
     <!-- Work tab -->
     <section id="work" class="tabcontent">
       <header class="container">
-        <h1>I like to apply systems thinking to my design process.</h1>
+        <h1>I apply systems thinking to my design process.</h1>
         <p>I design mostly web applications using user-centered design methods. My tools of choice range from pen + paper, whiteboards, Balsamiq, Sketch and Invision. I also write front-end code in HTML, SASS, Javascript, and AngularJS.</p>
       </header>  
       <!-- Woodgreen -->
@@ -48,11 +49,11 @@
           <header>
             <div class="left">
               <h2>Intake portal</h2>
-              <p>Summary section. I did some things to make this happen</p>
+              <p>I designed an intake portal for an outreach program, using user-centered design methods. I also developed the front-end in HTML, CSS, Velocity and AngularJS.</p>
               <a href="#" class="read">Read Case Study</a>
             </div>
             <div class="right">
-              <img src="images/woodgreen-preview.png">
+              <img src="images/intake/openapps.png">
             </div>
           </header>       
           <div class="expanded">
@@ -158,15 +159,15 @@
                 <a href="images/intake/openapps.png" data-lightbox="intake-final-reviewer" data-title="Reopened applications are sent back to Open Applications"><img src="images/intake/openapps.png" class="gallery-image"></a>
               </div>
             </div>
-            <h3>Design Justifications</h3>
-            <h2>Conclusions</h2>
+            <!-- <h3>Design Justifications</h3>
+            <h2>Conclusions</h2> -->
         </article>
         <!-- Membership Directory -->
         <article class="caseStudy" id="memdir">
           <header>
             <div class="left">
               <h2>Membership Directory Redesign</h2>
-              <p>Summary section. I did some things to make this happen</p>
+              <p>I redesigned Readyportal's Membership directory feature in a quick and dirty design sprint.</p>
               <a href="#" class="read">Read Case Study</a>
             </div>
             <div class="right">
@@ -282,7 +283,7 @@
           <header>
             <div class="left">
               <h2>Car GPS Display</h2>
-              <p>Summary section. I did some things to make this happen</p>
+              <p>I designed a concept for an In-Car GPS Navigation display.</p>
               <a href="#" class="read">Read Case Study</a>
             </div>
             <div class="right">
@@ -435,12 +436,6 @@
         </article>
       </div>
     </section>
-    <!-- Contact tab -->
-    <section id="contact" class="tabcontent">
-      <header class="container">
-        <h1>Contact me</h1>
-      </header>     
-    </section>
   </main>
   <!-- Footer -->
   <footer>
@@ -480,6 +475,7 @@
         }
     }
     document.getElementById("homenavlink").click();
+
     $(".read").click(function(){
       $(this).closest("header").siblings(".expanded").show();
       event.preventDefault();

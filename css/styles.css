@@ -33,10 +33,7 @@ h3 {font-size: 1.563em;}
 h4 {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
+
 html, body {
   min-height: 100%;
   width: 100%;
@@ -45,6 +42,12 @@ html * {
     box-sizing: border-box;
     color: #fff;
   }
+
+a {
+  text-decoration: none;
+  cursor: pointer;  
+}
+
 #header {
   height: 60px;
 }
@@ -70,8 +73,25 @@ nav ul, footer ul, .expanded .breadcrumbs {
 nav ul li, footer ul li, .expanded .breadcrumbs li {
   display: inline;
   margin: 0 8px;
+  font-weight: 300;
 }
 
+#homenavlink {
+  font-size: 32px;
+  font-weight: 300;
+}
+nav a, footer a, footer a i {
+  letter-spacing: 1px;
+  color: rgba(255,255,255,.7);
+  transition: .15s ease;
+  font-weight: 300;
+}
+footer i.fa {
+  font-size: 1.5em;
+}
+nav a:active, nav a:hover, nav a.active, footer a:active, footer a:hover, footer a i:hover {
+  color: #fff;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -118,6 +138,20 @@ nav ul li, footer ul li, .expanded .breadcrumbs li {
 }
 footer {
   height: 60px;
+}
+section > header.container {
+  width: 90%;
+  padding: 32px 16px;
+}
+#about a {
+  color: #121738
+}
+#work a {
+  color: #F2C2C7;
+  transition: .15s ease;
+}
+#work a:hover, #about a:hover {
+  text-decoration: underline;
 }
 .caseStudies {
   background-color: #fff;
@@ -181,6 +215,11 @@ footer {
 .caseStudy header img {
   display: block;
   width: 100%;
+}
+
+.caseStudy .expanded .container {
+  width: 90%;
+  padding: 32px 16px;
 }
 .caseStudy .expanded .gallery {
   display: flex;
