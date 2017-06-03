@@ -279,4 +279,7 @@ section > header.container {
   #homenavlink, footer .email {
     padding-bottom: 16px;
   }
+  section > header.container {
+    text-align: center;
+  }
 }
