@@ -127,8 +127,9 @@
               <p>Keeping the user requirements, Vanessa, Samantha and Allison in mind, I developed the following user flows. Then, the user screens were determined based on each user's specific flow.</p>
               <h3>Wireframes</h3>
               <p>An overview of the design evolution over time. These iterations were based on feedback received from user testing focus groups.</p>
-              <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePTHZCZlFueGNQTU0/preview" width="640" height="480"></iframe>
-
+              <div class="wrapper">
+                <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePTHZCZlFueGNQTU0/preview" width="640" height="480"></iframe>
+              </div>
               <h3>Final Prototype</h3>
               <h4>Applicant's Journey</h4>
               <div class="gallery">
@@ -361,7 +362,9 @@
               <p>As a result, the critical paths while navigating are:</p>
               <h3>Wireframes</h3>
               <p>With these requirements in mind, I designed the wireframes in Balsamiq Mockups.</p>
-              <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePbnAtS0ZjR3hsdWM/preview" width="640" height="480"></iframe>
+              <div class="wrapper">
+                <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePbnAtS0ZjR3hsdWM/preview" width="640" height="480"></iframe>
+              </div>
               <h3>Design Review</h3>
               <p>The design review was carried out using the System Usability Scale, SUS. The SUS provides a quick and effective method to measure the usability of a system. It is easy to administrate, and can be used in small sample sizes.</p>
               <p>Three types of participants were examined:</p>
@@ -463,16 +466,6 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
-        if ( $("#homenavlink").hasClass("active")) {
-          $("body").css("background-image","linear-gradient(to top, #F2C2C7 0%, #FFCCD2 100%)");
-        } 
-        if ($("#projectsnavlink").hasClass("active") ) {
-          $("body").css("background-image","linear-gradient(to top, #1E265C 0%, #121738 100%)");
-          
-        } 
-        if ($("#contactnavlink").hasClass("active") ) {
-          $("body").css("background-image","linear-gradient(to top, #7DE0E6 0%, #86F1F7 100%)");
-        }
     }
     document.getElementById("homenavlink").click();
 
