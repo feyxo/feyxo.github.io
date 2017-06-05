@@ -42,7 +42,6 @@ html, body {
 html * {
     box-sizing: border-box;
     color: #fff;
-    text-shadow: 0 3px 1px rgba(0,0,0,.1);
   }
 
 a {
@@ -148,6 +147,9 @@ section > header.container {
   width: 90%;
   padding: 32px 16px;
 }
+#about * {
+  text-shadow: 0 3px 1px rgba(0,0,0,.1);
+}
 #about a {
   color: #121738
 }
@@ -157,6 +159,9 @@ section > header.container {
 }
 #work a:hover, #about a:hover {
   text-decoration: underline;
+}
+header *, footer * {
+  text-shadow: 0 3px 1px rgba(0,0,0,.1);
 }
 .caseStudies {
   background-color: #fff;
@@ -213,7 +218,10 @@ section > header.container {
   background-color: #fff;
   color: #333;
   -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+/*  background-image: linear-gradient(to top, #EDB5BD 0%, #ff8fa4 100%);  
+  border: 8px solid #fff;
+  box-sizing: border-box;*/
 }
 .caseStudy .expanded * {
   color: #333;
@@ -226,6 +234,9 @@ section > header.container {
 .caseStudy .expanded .container {
   width: 90%;
   padding: 32px 16px;
+ /* background-color: #fff;
+  margin: 48px auto;*/
+
 }
 .caseStudy .expanded .gallery {
   display: flex;

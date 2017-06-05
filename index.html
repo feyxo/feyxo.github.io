@@ -166,6 +166,20 @@
             </div>
             <!-- <h3>Design Justifications</h3>
             <h2>Conclusions</h2> -->
+            <h2>Roadblocks</h2>
+            Unfortunately, projects don't always go as smoothly as planned. As a result, the actual solution differs from the proposed solution in the following ways:
+            <ul>
+              <li>No personalization: The proposed design has a unique list for each user. However, due to technology limitations, this was not possible</li>
+              <li>No thank you screens: After applicant submits the form, it doesn't redirect to a "Thanks for your submission" or "My applications" screen. As a result of time constraints, the MVP lacks this feature.</li>
+              <li>The proposed timeline went from 6 weeks to TBD. Basically, our server-side code had to be overhauled in order to implement a fully functional solution. This added another level of complexity to the project, resulting in a (seemingly) never-ending cycle of missed deadlines.</li>
+            </ul>
+            <h2>Conclusions</h2>
+            It is extremely important to be intentional in the brainstorming/planning phase of any project. Assumptions were made based on misunderstood communication, which led to delays. However, since the stakeholders were involved in every step of the process, the delays were seen as necessary to implement the best product.
+            <h2>Next Steps</h2>
+            <ul>
+              <li>User testing in beta - Actually roll out this product for testing with real users, so it can be refined based on feedback.</li>
+              <li>Add "Thank You" and "Error" messages.</li>
+            </ul>
         </article>
         <!-- Membership Directory -->
         <article class="caseStudy" id="memdir">
@@ -482,7 +496,7 @@
       $(this).closest("header").siblings(".expanded").show();
       event.preventDefault();
     });
-    $(".back-to-work").click(function(){
+    $(".breadcrumbs a").click(function(){
       $(this).closest(".expanded").hide();
       event.preventDefault();
     })
