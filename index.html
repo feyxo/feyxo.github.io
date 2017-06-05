@@ -61,7 +61,7 @@
             </div>
           </header>       
           <div class="expanded">
-          <div class="container">
+            <div class="container">
               <ul class="breadcrumbs">
                 <li><a href="#" onclick="openSection(event, 'about'); return false;">Home</a></li> /
                 <li><a href="#" class="back-to-work">Work</a></li> /
@@ -163,24 +163,27 @@
                 <a href="images/intake/rejectedapps-trans.png" data-lightbox="intake-final-reviewer" data-title="Reviewer can reopen applications if she is having second thoughts"><img alt="Feyi Agbaje - Reviewer can also reopen previously rejected applications" src="images/intake/rejectedapps-trans.png" class="gallery-image"></a>
                 <a href="images/intake/openapps.png" data-lightbox="intake-final-reviewer" data-title="Reopened applications are sent back to Open Applications"><img alt="Feyi Agbaje - Open Applications view" src="images/intake/openapps.png" class="gallery-image"></a>
               </div>
+              <h2>Roadblocks</h2>
+              Unfortunately, projects don't always go as smoothly as planned. As a result, the actual solution differs from the proposed solution in the following ways:
+              <ul>
+                <li>No personalization: The proposed design has a unique list for each user. However, due to technology limitations, this was not possible</li>
+                <li>No thank you screens: After applicant submits the form, it doesn't redirect to a "Thanks for your submission" or "My applications" screen. As a result of time constraints, the MVP lacks this feature.</li>
+                <li>The proposed timeline went from 6 weeks to TBD. Basically, our server-side code had to be overhauled in order to implement a fully functional solution. This added another level of complexity to the project, resulting in a (seemingly) never-ending cycle of missed deadlines.</li>
+              </ul>
+              <h2>Conclusions</h2>
+              It is extremely important to be intentional in the brainstorming/planning phase of any project. Assumptions were made based on misunderstood communication, which led to delays. However, since the stakeholders were involved in every step of the process, the delays were seen as necessary to implement the best product.
+              <h2>Next Steps</h2>
+              <ul>
+                <li>User testing in beta - Actually roll out this product for testing with real users, so it can be refined based on feedback.</li>
+                <li>Add "Thank You" and "Error" messages.</li>
+              </ul>
             </div>
-            <!-- <h3>Design Justifications</h3>
-            <h2>Conclusions</h2> -->
-            <h2>Roadblocks</h2>
-            Unfortunately, projects don't always go as smoothly as planned. As a result, the actual solution differs from the proposed solution in the following ways:
-            <ul>
-              <li>No personalization: The proposed design has a unique list for each user. However, due to technology limitations, this was not possible</li>
-              <li>No thank you screens: After applicant submits the form, it doesn't redirect to a "Thanks for your submission" or "My applications" screen. As a result of time constraints, the MVP lacks this feature.</li>
-              <li>The proposed timeline went from 6 weeks to TBD. Basically, our server-side code had to be overhauled in order to implement a fully functional solution. This added another level of complexity to the project, resulting in a (seemingly) never-ending cycle of missed deadlines.</li>
-            </ul>
-            <h2>Conclusions</h2>
-            It is extremely important to be intentional in the brainstorming/planning phase of any project. Assumptions were made based on misunderstood communication, which led to delays. However, since the stakeholders were involved in every step of the process, the delays were seen as necessary to implement the best product.
-            <h2>Next Steps</h2>
-            <ul>
-              <li>User testing in beta - Actually roll out this product for testing with real users, so it can be refined based on feedback.</li>
-              <li>Add "Thank You" and "Error" messages.</li>
-            </ul>
+           <!--  <a href="#" id="scroll-up">
+              <i class="fa fa-arrow-circle-up"></i>
+            </a> -->
+          </div>        
         </article>
+
         <!-- Membership Directory -->
         <article class="caseStudy" id="memdir">
           <header>
@@ -382,9 +385,10 @@
                 <li>User selects desired travel route</li>
               </ol>
               <p>As a result, the critical paths while navigating are:</p>
+              <div class="image-wrapper">
               <a href="images/gps/critical-path.png" data-lightbox="gps-critical-path" data-title="Critical Path for GPS Navigation"><img src="images/gps/critical-path.png"></a>
               <h3>Wireframes</h3>
-              <p>With these requirements in mind, I designed the wireframes in Balsamiq Mockups.</p>
+              <p>With these requirements in mind, I designed the wireframes in Balsamiq Mockups.</p></div>
               <div class="wrapper">
                 <iframe src="https://drive.google.com/file/d/0BwgKoYbgFYePbnAtS0ZjR3hsdWM/preview" width="640" height="480"></iframe>
               </div>
@@ -499,7 +503,13 @@
     $(".breadcrumbs a").click(function(){
       $(this).closest(".expanded").hide();
       event.preventDefault();
-    })
+    });
+    $("#scroll-up").click(function(){
+      event.preventDefault();
+      $("html, body").animate({
+        scrollTop: 0
+      }, 1000);
+    });
   </script>
 </body>
 </html>

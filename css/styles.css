@@ -219,9 +219,9 @@ header *, footer * {
   color: #333;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
-/*  background-image: linear-gradient(to top, #EDB5BD 0%, #ff8fa4 100%);  
+  background-image: linear-gradient(to top, #EDB5BD 0%, #ff8fa4 100%);  
   border: 8px solid #fff;
-  box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 .caseStudy .expanded * {
   color: #333;
@@ -234,8 +234,8 @@ header *, footer * {
 .caseStudy .expanded .container {
   width: 90%;
   padding: 32px 16px;
- /* background-color: #fff;
-  margin: 48px auto;*/
+  background-color: #fff;
+  margin: 48px auto;
 
 }
 .caseStudy .expanded .gallery {
@@ -254,6 +254,15 @@ header *, footer * {
   width: 100%;
   height: auto;
 }
+.image-wrapper {
+  max-width: 600px;
+}
+.image-wrapper img {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
 .wrapper {
   display: block;
   width: 100%;
@@ -263,6 +272,20 @@ header *, footer * {
 }
 .wrapper iframe {
   width: 100%;
+}
+#scroll-up {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  color: #fff;
+}
+#scroll-up i.fa {
+  font-size: 3em;
+  z-index: 99999999;
+  color: rgba(255,255,255,.7); 
+}
+#scroll-up:hover i.fa, #scroll-up i.fa:hover {
+  color: #fff;
 }
 @media all and (max-width: 768px){
   .caseStudy header {
