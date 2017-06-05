@@ -157,7 +157,13 @@
                 <a href="images/intake/myapp-selectdate.png" data-lightbox="intake-final-applicant" data-title="Applicant can select date and time from sidepanel"><img alt="Feyi Agbaje - applicant can select information session date" src="images/intake/myapp-selectdate.png" class="gallery-image"></a>
                 <a href="images/intake/myapp-selected.png" data-lightbox="intake-final-applicant" data-title="Applicant has selected and can submit"><img alt="Feyi Agbaje - applicant has selected info session date" src="images/intake/myapp-selected.png" class="gallery-image"></a>
               </div>
-              <h4>Reviewers Journey</h4>
+              <h4>Referrer's Journey</h4>
+              <div class="gallery">
+                <a href="images/intake/signup.png" data-lightbox="intake-final-reviewer" data-title="Sign up screen"><img alt="Feyi Agbaje - sign up screen for intake portal" src="images/intake/signup.png" class="gallery-image"></a>
+                <a href="images/intake/login.png" data-lightbox="intake-final-reviewer" data-title="Login Screen"><img alt="Feyi Agbaje - login screen for intake portal" src="images/intake/login.png" class="gallery-image"></a>
+                <a href="images/intake/myrefs.png" data-lightbox="intake-final-reviewer" data-title="Referrer has access to all his/her referred applications. Referrer can fill out referral form and track referral applicants' progress"><img alt="Feyi Agbaje - My Referrals screen for intake portal" src="images/intake/myrefs.png" class="gallery-image"></a>
+              </div>
+              <h4>Reviewer's Journey</h4>
               <div class="gallery">
                 <a href="images/intake/signup.png" data-lightbox="intake-final-reviewer" data-title="Sign up screen"><img alt="Feyi Agbaje - sign up screen for intake portal" src="images/intake/signup.png" class="gallery-image"></a>
                 <a href="images/intake/login.png" data-lightbox="intake-final-reviewer" data-title="Login Screen"><img alt="Feyi Agbaje - login screen for intake portal" src="images/intake/login.png" class="gallery-image"></a>
@@ -507,6 +513,7 @@
 
     $(".read").click(function(){
       $(this).closest("header").siblings(".expanded").show();
+      $("html, body").scrollTop(0);
       event.preventDefault();
     });
     $(".breadcrumbs a").click(function(){
