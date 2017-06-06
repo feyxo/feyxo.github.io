@@ -273,19 +273,20 @@ header *, footer * {
 .wrapper iframe {
   width: 100%;
 }
-#scroll-up {
+.scroll-up {
   position: fixed;
-  right: 1%;
-  bottom: 5%;
+  left: 90%;
+  bottom: 48px;
   color: #fff;
+  display: none;
 }
-#scroll-up i.fa {
+.scroll-up i.fa {
   font-size: 3em;
   z-index: 99999999;
-  color: rgba(255,255,255,.7); 
+  color: rgba(18, 23, 56, .7); 
 }
-#scroll-up:hover i.fa, #scroll-up i.fa:hover {
-  color: #fff;
+.scroll-up:hover i.fa, .scroll-up i.fa:hover {
+  color: rgba(18, 23, 56, 1);
 }
 @media all and (max-width: 768px){
   .caseStudy header {

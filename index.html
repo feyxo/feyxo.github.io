@@ -38,7 +38,7 @@
         <h1>Hello! My name is Feyi Agbaje and I like to make things. I'm a User Experience & Product Designer living in Toronto.</h1>
         <p>I currently design (and develop) web applications at Readyportal. I love the design process, but CSS excites me a lot as well.</p>
         <p>I graduated from University of Waterloo's System Design Engineering program in 2014.</p>
-        <p>Here's some of <a href="#" onclick="openSection(event, 'work'); return false;" target="_blank">my work</a>. You can also <a href="https://drive.google.com/file/d/0BwgKoYbgFYePTllQOXBuLTk0WjQ/view?usp=sharing" target="_blank">view my resume</a> or <a href="mailto:feyisola.agbaje@gmail.com" target="_blank">send me an email.</a></p>
+        <p>Here's some of <a href="#" class="my-work" target="_blank">my work</a>. You can also <a href="https://drive.google.com/file/d/0BwgKoYbgFYePTllQOXBuLTk0WjQ/view?usp=sharing" target="_blank">view my resume</a> or <a href="mailto:feyisola.agbaje@gmail.com" target="_blank">send me an email.</a></p>
       </header>      
     </section> <!-- End about -->
     <!-- Work tab -->
@@ -193,9 +193,9 @@
                 <li>Add "Thank You" and "Error" messages.</li>
               </ul>
             </div>
-           <!--  <a href="#" id="scroll-up">
+            <a href="#" class="scroll-up">
               <i class="fa fa-arrow-circle-up"></i>
-            </a> -->
+            </a>
           </div>        
         </article>
 
@@ -312,6 +312,9 @@
               </ul>
               <h2>Conclusions</h2>
              <p> It's amazing what can be achieved in such a short period of time when we let go of our need for perfection. The challenge here was to produce a minimum viable product in a short time frame, without compromising in terms of providing value.</p>
+              <a href="#" class="scroll-up">
+                <i class="fa fa-arrow-circle-up"></i>
+              </a>
            </div>
           </div>       
         </article>
@@ -476,6 +479,10 @@
               <p>Uppercase typography was used across the system to enhance visibility. The use of the system would simultaneously be driving; thus, it is necessary to have the fonts as easy to read as possible in order to save time and enhance efficiency. The headers utilized larger sized fonts in order to enhance salience. Also, the same font (bold Montserrat)  was used across the system for consistency purposes.</p>
               <h4>Controls</h4>
               <p>The in-car GPS system uses a touch-screen interface, and the accepted gesture is a push/press action. The at rest buttons are grey, while the active buttons are green. Scrollbars are also utilized for list navigation.</p>
+
+              <a href="#" class="scroll-up">
+                <i class="fa fa-arrow-circle-up"></i>
+              </a>
             </div>
           </div>     
         </article>
@@ -520,11 +527,24 @@
       $(this).closest(".expanded").hide();
       event.preventDefault();
     });
-    $("#scroll-up").click(function(){
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 500) {
+        $(".scroll-up").show().fadeIn("slow");
+      }
+      else {
+        $(".scroll-up").hide().fadeOut("slow");
+      }
+    });
+    $(".scroll-up").click(function(){
       event.preventDefault();
       $("html, body").animate({
         scrollTop: 0
       }, 1000);
+    });
+    $(".my-work").click(function(){
+      event.preventDefault();
+      openSection(event, 'work');
+      $("#projectsnavlink").addClass("active");
     });
   </script>
 </body>
