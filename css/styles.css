@@ -275,7 +275,7 @@ header *, footer * {
 }
 .scroll-up {
   position: fixed;
-  left: 90%;
+  left: 89%;
   bottom: 48px;
   color: #fff;
   display: none;
